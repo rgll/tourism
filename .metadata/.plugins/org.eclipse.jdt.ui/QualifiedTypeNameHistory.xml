@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.EnableAutoConfiguration"/>
+<fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.SpringBootApplication"/>
+<fullyQualifiedTypeName name="org.mybatis.spring.annotation.MapperScan"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
+<fullyQualifiedTypeName name="org.springframework.boot.context.web.SpringBootServletInitializer"/>
+<fullyQualifiedTypeName name="java.util.logging.Logger"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+<fullyQualifiedTypeName name="org.springframework.boot.context.properties.ConfigurationProperties"/>
+<fullyQualifiedTypeName name="com.bonc.lyk.util.DefaultZabbixApi"/>
+<fullyQualifiedTypeName name="com.bonc.lyk.util.ZabbixUrl"/>
+<fullyQualifiedTypeName name="com.bonc.lyk.util.ZabbixApi"/>
+<fullyQualifiedTypeName name="com.bonc.lyk.service.GetDisk"/>
+<fullyQualifiedTypeName name="com.bonc.lyk.service.GetFileNum"/>
+<fullyQualifiedTypeName name="com.bonc.lyk.monitor.ReturnObj"/>
+<fullyQualifiedTypeName name="com.bonc.lyk.constant.BaseConstant"/>
+<fullyQualifiedTypeName name="com.bonc.lyk.service.GetHistoryAndTrend"/>
+<fullyQualifiedTypeName name="com.alibaba.fastjson.JSONArray"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+<fullyQualifiedTypeName name="com.bonc.lyk.util.Request"/>
+<fullyQualifiedTypeName name="com.bonc.lyk.util.RequestBuilder"/>
+<fullyQualifiedTypeName name="com.bonc.lyk.service.GetBW"/>
+</qualifiedTypeNameHistroy>
