@@ -7,6 +7,7 @@ public class Text2 {
 	public static void main(String[] args) {
 
 		System.err.println("输入一个包含G和B的字符串：");
+		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 		String str = sc.nextLine();
 		char[] ch = str.toCharArray();
