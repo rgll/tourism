@@ -9125,3 +9125,948 @@ org.apache.jasper.JasperException: /WEB-INF/back/main.jsp (line: 84, column: 0) 
 2017-03-28 09:56:36 [http-nio-8080-exec-1] INFO  [/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
 2017-03-28 09:56:36 [http-nio-8080-exec-1] INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
 2017-03-28 09:56:36 [http-nio-8080-exec-1] INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 34 ms
+2017-03-29 17:50:49 [main] INFO  Application:48 - Starting Application on PC-20160708UCGF with PID 19868 (D:\Java8\git\tourism\target\classes started by Administrator in D:\Java8\git\tourism)
+2017-03-29 17:50:49 [main] INFO  Application:665 - The following profiles are active: dev
+2017-03-29 17:50:50 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@239b0f9d: startup date [Wed Mar 29 17:50:50 CST 2017]; root of context hierarchy
+2017-03-29 17:50:50 [background-preinit] INFO  Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-03-29 17:50:54 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-03-29 17:50:54 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-03-29 17:50:56 [main] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$600aa00d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-29 17:51:05 [main] INFO  TomcatEmbeddedServletContainer:87 - Tomcat initialized with port(s): 8080 (http)
+2017-03-29 17:51:05 [main] INFO  StandardService:179 - Starting service Tomcat
+2017-03-29 17:51:05 [main] INFO  StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-03-29 17:51:06 [localhost-startStop-1] INFO  TldScanner:179 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-03-29 17:51:06 [localhost-startStop-1] INFO  [/]:179 - Initializing Spring embedded WebApplicationContext
+2017-03-29 17:51:06 [localhost-startStop-1] INFO  ContextLoader:276 - Root WebApplicationContext: initialization completed in 15954 ms
+2017-03-29 17:51:06 [localhost-startStop-1] INFO  FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-03-29 17:51:06 [localhost-startStop-1] INFO  DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-03-29 17:51:06 [localhost-startStop-1] INFO  ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-03-29 17:51:09 [main] INFO  LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-29 17:51:09 [main] INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-29 17:51:10 [main] INFO  Version:37 - HHH000412: Hibernate Core {5.0.11.Final}
+2017-03-29 17:51:10 [main] INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-03-29 17:51:10 [main] INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-03-29 17:51:10 [main] INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-29 17:51:10 [main] INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-03-29 17:51:12 [main] INFO  SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-03-29 17:51:12 [main] INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: s_resource
+2017-03-29 17:51:12 [main] INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: s_resource
+2017-03-29 17:51:12 [main] INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: s_resource_role
+2017-03-29 17:51:12 [main] INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: s_resource_role
+2017-03-29 17:51:13 [main] INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: s_role
+2017-03-29 17:51:13 [main] INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: s_role
+2017-03-29 17:51:13 [main] INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: user
+2017-03-29 17:51:13 [main] INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: user
+2017-03-29 17:51:14 [main] INFO  LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-29 17:51:14 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/a]}" onto public void com.hsxy.tourism.controller.JedisController.Test()
+2017-03-29 17:51:14 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter]}" onto public java.lang.String com.hsxy.tourism.controller.WelcomeController.welcome2()
+2017-03-29 17:51:14 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/json]}" onto public com.alibaba.fastjson.JSONObject com.hsxy.tourism.controller.WelcomeController.welcome1()
+2017-03-29 17:51:14 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter2]}" onto public java.lang.String com.hsxy.tourism.controller.WelcomeController.welcome3()
+2017-03-29 17:51:14 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/back/main]}" onto public java.lang.String com.hsxy.tourism.controller.WelcomeController.welcome4()
+2017-03-29 17:51:14 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-03-29 17:51:14 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-29 17:51:14 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2017-03-29 17:51:14 [main] INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@239b0f9d: startup date [Wed Mar 29 17:50:50 CST 2017]; root of context hierarchy
+2017-03-29 17:51:16 [main] INFO  AuthenticationManagerConfiguration:169 - 
+
+Using default security password: 5b15f6a7-2f99-4069-9608-4dabae611127
+
+2017-03-29 17:51:17 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2017-03-29 17:51:17 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2017-03-29 17:51:17 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/images/**'], []
+2017-03-29 17:51:17 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/webjars/**'], []
+2017-03-29 17:51:17 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/**/favicon.ico'], []
+2017-03-29 17:51:17 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/error'], []
+2017-03-29 17:51:17 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1e366f0f, org.springframework.security.web.context.SecurityContextPersistenceFilter@1f251bf1, org.springframework.security.web.header.HeaderWriterFilter@3555d804, org.springframework.security.web.authentication.logout.LogoutFilter@b0c4905, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@65b69ccb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@433db56d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@8a11a19, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@647b3fd3, org.springframework.security.web.session.SessionManagementFilter@4c4be9d8, org.springframework.security.web.access.ExceptionTranslationFilter@4f72078d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1360ef8d]
+2017-03-29 17:51:18 [main] INFO  AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-03-29 17:51:18 [main] INFO  Http11NioProtocol:179 - Initializing ProtocolHandler ["http-nio-8080"]
+2017-03-29 17:51:18 [main] INFO  Http11NioProtocol:179 - Starting ProtocolHandler [http-nio-8080]
+2017-03-29 17:51:18 [main] INFO  NioSelectorPool:179 - Using a shared selector for servlet write/read
+2017-03-29 17:51:18 [main] INFO  TomcatEmbeddedServletContainer:185 - Tomcat started on port(s): 8080 (http)
+2017-03-29 17:51:18 [main] INFO  Application:57 - Started Application in 30.277 seconds (JVM running for 37.611)
+2017-03-29 17:55:30 [main] INFO  Application:48 - Starting Application on PC-20160708UCGF with PID 18676 (D:\Java8\git\tourism\target\classes started by Administrator in D:\Java8\git\tourism)
+2017-03-29 17:55:30 [main] INFO  Application:665 - The following profiles are active: dev
+2017-03-29 17:55:31 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@239b0f9d: startup date [Wed Mar 29 17:55:31 CST 2017]; root of context hierarchy
+2017-03-29 17:55:31 [background-preinit] INFO  Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-03-29 17:55:34 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-03-29 17:55:34 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-03-29 17:55:35 [main] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5b56d149] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-29 17:55:38 [main] INFO  TomcatEmbeddedServletContainer:87 - Tomcat initialized with port(s): 8080 (http)
+2017-03-29 17:55:38 [main] INFO  StandardService:179 - Starting service Tomcat
+2017-03-29 17:55:38 [main] INFO  StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-03-29 17:55:38 [localhost-startStop-1] INFO  TldScanner:179 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-03-29 17:55:38 [localhost-startStop-1] INFO  [/]:179 - Initializing Spring embedded WebApplicationContext
+2017-03-29 17:55:38 [localhost-startStop-1] INFO  ContextLoader:276 - Root WebApplicationContext: initialization completed in 7802 ms
+2017-03-29 17:55:39 [localhost-startStop-1] INFO  FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-03-29 17:55:39 [localhost-startStop-1] INFO  DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-03-29 17:55:39 [localhost-startStop-1] INFO  ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-03-29 17:55:40 [main] INFO  LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-29 17:55:40 [main] INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-29 17:55:41 [main] INFO  Version:37 - HHH000412: Hibernate Core {5.0.11.Final}
+2017-03-29 17:55:41 [main] INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-03-29 17:55:41 [main] INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-03-29 17:55:41 [main] INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-29 17:55:42 [main] INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-03-29 17:55:44 [main] INFO  LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-29 17:55:44 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/a]}" onto public void com.hsxy.tourism.controller.JedisController.Test()
+2017-03-29 17:55:44 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter]}" onto public java.lang.String com.hsxy.tourism.controller.WelcomeController.welcome2()
+2017-03-29 17:55:44 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/json]}" onto public com.alibaba.fastjson.JSONObject com.hsxy.tourism.controller.WelcomeController.welcome1()
+2017-03-29 17:55:44 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter2]}" onto public java.lang.String com.hsxy.tourism.controller.WelcomeController.welcome3()
+2017-03-29 17:55:44 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/back/main]}" onto public java.lang.String com.hsxy.tourism.controller.WelcomeController.welcome4()
+2017-03-29 17:55:44 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-03-29 17:55:44 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-29 17:55:45 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2017-03-29 17:55:45 [main] INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@239b0f9d: startup date [Wed Mar 29 17:55:31 CST 2017]; root of context hierarchy
+2017-03-29 17:55:48 [main] INFO  AuthenticationManagerConfiguration:169 - 
+
+Using default security password: 60389635-3504-45fc-b17e-014d256ba56d
+
+2017-03-29 17:55:48 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2017-03-29 17:55:48 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2017-03-29 17:55:48 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/images/**'], []
+2017-03-29 17:55:48 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/webjars/**'], []
+2017-03-29 17:55:48 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/**/favicon.ico'], []
+2017-03-29 17:55:48 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/error'], []
+2017-03-29 17:55:49 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@38f569d, org.springframework.security.web.context.SecurityContextPersistenceFilter@1a06ec24, org.springframework.security.web.header.HeaderWriterFilter@58c80957, org.springframework.security.web.authentication.logout.LogoutFilter@70ccb3bf, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@f9ac719, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1f5f4d48, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6530a1de, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6464f017, org.springframework.security.web.session.SessionManagementFilter@38a61c81, org.springframework.security.web.access.ExceptionTranslationFilter@7a7bb083, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1ab717f3]
+2017-03-29 17:55:49 [main] INFO  AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-03-29 17:55:49 [main] INFO  Http11NioProtocol:179 - Initializing ProtocolHandler ["http-nio-8080"]
+2017-03-29 17:55:49 [main] INFO  Http11NioProtocol:179 - Starting ProtocolHandler [http-nio-8080]
+2017-03-29 17:55:50 [main] INFO  NioSelectorPool:179 - Using a shared selector for servlet write/read
+2017-03-29 17:55:50 [main] INFO  TomcatEmbeddedServletContainer:185 - Tomcat started on port(s): 8080 (http)
+2017-03-29 17:55:50 [main] INFO  Application:57 - Started Application in 20.09 seconds (JVM running for 23.696)
+2017-03-29 17:58:19 [main] INFO  Application:48 - Starting Application on PC-20160708UCGF with PID 19292 (D:\Java8\git\tourism\target\classes started by Administrator in D:\Java8\git\tourism)
+2017-03-29 17:58:19 [main] INFO  Application:665 - The following profiles are active: dev
+2017-03-29 17:58:19 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@239b0f9d: startup date [Wed Mar 29 17:58:19 CST 2017]; root of context hierarchy
+2017-03-29 17:58:20 [background-preinit] INFO  Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-03-29 17:58:23 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-03-29 17:58:23 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-03-29 17:58:25 [main] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1454af4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-29 17:58:27 [main] INFO  TomcatEmbeddedServletContainer:87 - Tomcat initialized with port(s): 8080 (http)
+2017-03-29 17:58:27 [main] INFO  StandardService:179 - Starting service Tomcat
+2017-03-29 17:58:27 [main] INFO  StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-03-29 17:58:28 [localhost-startStop-1] INFO  TldScanner:179 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-03-29 17:58:28 [localhost-startStop-1] INFO  [/]:179 - Initializing Spring embedded WebApplicationContext
+2017-03-29 17:58:28 [localhost-startStop-1] INFO  ContextLoader:276 - Root WebApplicationContext: initialization completed in 8911 ms
+2017-03-29 17:58:28 [localhost-startStop-1] INFO  FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-03-29 17:58:28 [localhost-startStop-1] INFO  DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-03-29 17:58:28 [localhost-startStop-1] INFO  ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-03-29 17:58:30 [main] INFO  LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-29 17:58:30 [main] INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-29 17:58:31 [main] INFO  Version:37 - HHH000412: Hibernate Core {5.0.11.Final}
+2017-03-29 17:58:31 [main] INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-03-29 17:58:31 [main] INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-03-29 17:58:31 [main] INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-29 17:58:31 [main] INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-03-29 17:58:33 [main] INFO  SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-03-29 17:58:33 [main] INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: s_resource
+2017-03-29 17:58:33 [main] INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: s_resource
+2017-03-29 17:58:33 [main] INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: s_resource_role
+2017-03-29 17:58:33 [main] INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: s_resource_role
+2017-03-29 17:58:33 [main] INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: s_role
+2017-03-29 17:58:33 [main] INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: s_role
+2017-03-29 17:58:33 [main] INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: s_user
+2017-03-29 17:58:33 [main] INFO  InformationExtractorJdbcDatabaseMetaDataImpl:365 - HHH000262: Table not found: s_user
+2017-03-29 17:58:33 [main] INFO  LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-29 17:58:34 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/a]}" onto public void com.hsxy.tourism.controller.JedisController.Test()
+2017-03-29 17:58:34 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/json]}" onto public com.alibaba.fastjson.JSONObject com.hsxy.tourism.controller.WelcomeController.welcome1()
+2017-03-29 17:58:34 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter]}" onto public java.lang.String com.hsxy.tourism.controller.WelcomeController.welcome2()
+2017-03-29 17:58:34 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter2]}" onto public java.lang.String com.hsxy.tourism.controller.WelcomeController.welcome3()
+2017-03-29 17:58:34 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/back/main]}" onto public java.lang.String com.hsxy.tourism.controller.WelcomeController.welcome4()
+2017-03-29 17:58:34 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-03-29 17:58:34 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-29 17:58:34 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2017-03-29 17:58:34 [main] INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@239b0f9d: startup date [Wed Mar 29 17:58:19 CST 2017]; root of context hierarchy
+2017-03-29 17:58:36 [main] INFO  AuthenticationManagerConfiguration:169 - 
+
+Using default security password: bb434c6d-71d0-4075-bf72-33a66e3b8f44
+
+2017-03-29 17:58:36 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2017-03-29 17:58:36 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2017-03-29 17:58:36 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/images/**'], []
+2017-03-29 17:58:36 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/webjars/**'], []
+2017-03-29 17:58:36 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/**/favicon.ico'], []
+2017-03-29 17:58:36 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/error'], []
+2017-03-29 17:58:37 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1d982fbe, org.springframework.security.web.context.SecurityContextPersistenceFilter@2e488e45, org.springframework.security.web.header.HeaderWriterFilter@3333245e, org.springframework.security.web.authentication.logout.LogoutFilter@6067e7c1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@14745c3c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@18ad085a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7bc4ac3e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3adb4cc8, org.springframework.security.web.session.SessionManagementFilter@6eeeb9da, org.springframework.security.web.access.ExceptionTranslationFilter@136a4800, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2e3b4394]
+2017-03-29 17:58:38 [main] INFO  AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-03-29 17:58:39 [main] INFO  Http11NioProtocol:179 - Initializing ProtocolHandler ["http-nio-8080"]
+2017-03-29 17:58:40 [main] INFO  Http11NioProtocol:179 - Starting ProtocolHandler [http-nio-8080]
+2017-03-29 17:58:47 [main] INFO  NioSelectorPool:179 - Using a shared selector for servlet write/read
+2017-03-29 17:58:47 [main] INFO  TomcatEmbeddedServletContainer:185 - Tomcat started on port(s): 8080 (http)
+2017-03-29 17:58:47 [main] INFO  Application:57 - Started Application in 28.416 seconds (JVM running for 31.957)
+2017-03-30 11:15:39 [main] INFO  Application:48 - Starting Application on PC-20160708UCGF with PID 5904 (D:\Java8\git\tourism\target\classes started by Administrator in D:\Java8\git\tourism)
+2017-03-30 11:15:39 [main] INFO  Application:665 - The following profiles are active: dev
+2017-03-30 11:15:40 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@239b0f9d: startup date [Thu Mar 30 11:15:40 CST 2017]; root of context hierarchy
+2017-03-30 11:15:40 [background-preinit] INFO  Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-03-30 11:15:45 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-03-30 11:15:45 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-03-30 11:15:45 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.UserDao.
+2017-03-30 11:15:46 [main] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$35d102c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-30 11:15:49 [main] INFO  TomcatEmbeddedServletContainer:87 - Tomcat initialized with port(s): 8080 (http)
+2017-03-30 11:15:49 [main] INFO  StandardService:179 - Starting service Tomcat
+2017-03-30 11:15:49 [main] INFO  StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-03-30 11:15:50 [localhost-startStop-1] INFO  TldScanner:179 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-03-30 11:15:50 [localhost-startStop-1] INFO  [/]:179 - Initializing Spring embedded WebApplicationContext
+2017-03-30 11:15:50 [localhost-startStop-1] INFO  ContextLoader:276 - Root WebApplicationContext: initialization completed in 10022 ms
+2017-03-30 11:15:51 [localhost-startStop-1] INFO  FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-03-30 11:15:51 [localhost-startStop-1] INFO  DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-03-30 11:15:51 [localhost-startStop-1] INFO  ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-03-30 11:15:53 [main] INFO  LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-30 11:15:54 [main] INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-30 11:15:54 [main] INFO  Version:37 - HHH000412: Hibernate Core {5.0.11.Final}
+2017-03-30 11:15:54 [main] INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-03-30 11:15:54 [main] INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-03-30 11:15:54 [main] INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-30 11:15:54 [main] INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-03-30 11:15:56 [main] INFO  SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-03-30 11:15:57 [main] INFO  LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-30 11:15:58 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/a]}" onto public void com.hsxy.tourism.controller.JedisController.Test()
+2017-03-30 11:15:58 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/json]}" onto public com.alibaba.fastjson.JSONObject com.hsxy.tourism.controller.WelcomeController.welcome1()
+2017-03-30 11:15:58 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter]}" onto public java.lang.String com.hsxy.tourism.controller.WelcomeController.welcome2()
+2017-03-30 11:15:58 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter2]}" onto public java.lang.String com.hsxy.tourism.controller.WelcomeController.welcome3()
+2017-03-30 11:15:58 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/back/main]}" onto public java.lang.String com.hsxy.tourism.controller.WelcomeController.welcome4()
+2017-03-30 11:15:58 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-03-30 11:15:58 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-30 11:15:59 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/home] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-30 11:15:59 [main] INFO  SimpleUrlHandlerMapping:341 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-30 11:15:59 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/hello] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-30 11:15:59 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-30 11:15:59 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2017-03-30 11:15:59 [main] INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@239b0f9d: startup date [Thu Mar 30 11:15:40 CST 2017]; root of context hierarchy
+2017-03-30 11:16:00 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1659d7d, org.springframework.security.web.context.SecurityContextPersistenceFilter@5c1ea00, org.springframework.security.web.header.HeaderWriterFilter@7827cdfc, org.springframework.security.web.csrf.CsrfFilter@5b49b1df, org.springframework.security.web.authentication.logout.LogoutFilter@74267ece, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3ef7fb04, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3398ed12, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3458be63, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@2d4f1ddd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6892d403, org.springframework.security.web.session.SessionManagementFilter@19d3f4fb, org.springframework.security.web.access.ExceptionTranslationFilter@80b6098, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@13edc1bc]
+2017-03-30 11:16:01 [main] INFO  AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-03-30 11:16:01 [main] INFO  Http11NioProtocol:179 - Initializing ProtocolHandler ["http-nio-8080"]
+2017-03-30 11:16:01 [main] INFO  Http11NioProtocol:179 - Starting ProtocolHandler [http-nio-8080]
+2017-03-30 11:16:02 [main] INFO  NioSelectorPool:179 - Using a shared selector for servlet write/read
+2017-03-30 11:16:02 [main] INFO  TomcatEmbeddedServletContainer:185 - Tomcat started on port(s): 8080 (http)
+2017-03-30 11:16:02 [main] INFO  Application:57 - Started Application in 23.923 seconds (JVM running for 31.401)
+2017-03-30 11:17:12 [http-nio-8080-exec-1] INFO  [/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-03-30 11:17:12 [http-nio-8080-exec-1] INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-03-30 11:17:12 [http-nio-8080-exec-1] INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 58 ms
+2017-03-30 11:42:26 [main] INFO  Application:48 - Starting Application on PC-20160708UCGF with PID 256 (D:\Java8\git\tourism\target\classes started by Administrator in D:\Java8\git\tourism)
+2017-03-30 11:42:26 [main] INFO  Application:665 - The following profiles are active: dev
+2017-03-30 11:42:27 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@fb9c7aa: startup date [Thu Mar 30 11:42:27 CST 2017]; root of context hierarchy
+2017-03-30 11:42:27 [background-preinit] INFO  Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-03-30 11:42:29 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-03-30 11:42:29 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-03-30 11:42:29 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.UserDao.
+2017-03-30 11:42:30 [main] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$565c39e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-30 11:42:31 [main] INFO  TomcatEmbeddedServletContainer:87 - Tomcat initialized with port(s): 8080 (http)
+2017-03-30 11:42:31 [main] INFO  StandardService:179 - Starting service Tomcat
+2017-03-30 11:42:31 [main] INFO  StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-03-30 11:42:32 [localhost-startStop-1] INFO  TldScanner:179 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-03-30 11:42:32 [localhost-startStop-1] INFO  [/]:179 - Initializing Spring embedded WebApplicationContext
+2017-03-30 11:42:32 [localhost-startStop-1] INFO  ContextLoader:276 - Root WebApplicationContext: initialization completed in 5234 ms
+2017-03-30 11:42:32 [localhost-startStop-1] INFO  FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-03-30 11:42:32 [localhost-startStop-1] INFO  DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-03-30 11:42:32 [localhost-startStop-1] INFO  ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-03-30 11:42:34 [main] INFO  LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-30 11:42:34 [main] INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-30 11:42:34 [main] INFO  Version:37 - HHH000412: Hibernate Core {5.0.11.Final}
+2017-03-30 11:42:34 [main] INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-03-30 11:42:34 [main] INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-03-30 11:42:34 [main] INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-30 11:42:34 [main] INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-03-30 11:42:35 [main] INFO  SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-03-30 11:42:35 [main] INFO  LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-30 11:42:36 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/a]}" onto public void com.hsxy.tourism.web.controller.JedisController.Test()
+2017-03-30 11:42:36 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/json]}" onto public com.alibaba.fastjson.JSONObject com.hsxy.tourism.web.WelcomeController.welcome1()
+2017-03-30 11:42:36 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome2()
+2017-03-30 11:42:36 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter2]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome3()
+2017-03-30 11:42:36 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/back/main]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome4()
+2017-03-30 11:42:36 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-03-30 11:42:36 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-30 11:42:36 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/home] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-30 11:42:36 [main] INFO  SimpleUrlHandlerMapping:341 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-30 11:42:36 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/main] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-30 11:42:36 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-30 11:42:36 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2017-03-30 11:42:36 [main] INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@fb9c7aa: startup date [Thu Mar 30 11:42:27 CST 2017]; root of context hierarchy
+2017-03-30 11:42:37 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@151f1734, org.springframework.security.web.context.SecurityContextPersistenceFilter@55a07f97, org.springframework.security.web.header.HeaderWriterFilter@31daf094, org.springframework.security.web.csrf.CsrfFilter@470866d1, org.springframework.security.web.authentication.logout.LogoutFilter@574e4184, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6892d403, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@33986be7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@574413bd, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@1f7b1d6a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@601e7c97, org.springframework.security.web.session.SessionManagementFilter@3e265811, org.springframework.security.web.access.ExceptionTranslationFilter@62c1259f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2d4f1ddd]
+2017-03-30 11:42:39 [main] INFO  AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-03-30 11:42:39 [main] INFO  Http11NioProtocol:179 - Initializing ProtocolHandler ["http-nio-8080"]
+2017-03-30 11:42:39 [main] INFO  Http11NioProtocol:179 - Starting ProtocolHandler [http-nio-8080]
+2017-03-30 11:42:39 [main] INFO  NioSelectorPool:179 - Using a shared selector for servlet write/read
+2017-03-30 11:42:39 [main] INFO  TomcatEmbeddedServletContainer:185 - Tomcat started on port(s): 8080 (http)
+2017-03-30 11:42:39 [main] INFO  Application:57 - Started Application in 13.038 seconds (JVM running for 14.236)
+2017-03-30 11:45:58 [http-nio-8080-exec-1] INFO  [/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-03-30 11:45:58 [http-nio-8080-exec-1] INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-03-30 11:45:58 [http-nio-8080-exec-1] INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 45 ms
+2017-03-30 11:57:23 [main] INFO  Application:48 - Starting Application on PC-20160708UCGF with PID 6724 (D:\Java8\git\tourism\target\classes started by Administrator in D:\Java8\git\tourism)
+2017-03-30 11:57:23 [main] INFO  Application:665 - The following profiles are active: dev
+2017-03-30 11:57:23 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@239b0f9d: startup date [Thu Mar 30 11:57:23 CST 2017]; root of context hierarchy
+2017-03-30 11:57:24 [background-preinit] INFO  Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-03-30 11:57:26 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-03-30 11:57:26 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-03-30 11:57:26 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.UserDao.
+2017-03-30 11:57:27 [main] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2db10ad7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-30 11:57:29 [main] INFO  TomcatEmbeddedServletContainer:87 - Tomcat initialized with port(s): 8080 (http)
+2017-03-30 11:57:29 [main] INFO  StandardService:179 - Starting service Tomcat
+2017-03-30 11:57:29 [main] INFO  StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-03-30 11:57:29 [localhost-startStop-1] INFO  TldScanner:179 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-03-30 11:57:29 [localhost-startStop-1] INFO  [/]:179 - Initializing Spring embedded WebApplicationContext
+2017-03-30 11:57:29 [localhost-startStop-1] INFO  ContextLoader:276 - Root WebApplicationContext: initialization completed in 5915 ms
+2017-03-30 11:57:29 [localhost-startStop-1] INFO  FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-03-30 11:57:30 [localhost-startStop-1] INFO  DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-03-30 11:57:30 [localhost-startStop-1] INFO  ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-03-30 11:57:31 [main] INFO  LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-30 11:57:31 [main] INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-30 11:57:31 [main] INFO  Version:37 - HHH000412: Hibernate Core {5.0.11.Final}
+2017-03-30 11:57:31 [main] INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-03-30 11:57:31 [main] INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-03-30 11:57:31 [main] INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-30 11:57:32 [main] INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-03-30 11:57:33 [main] INFO  SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-03-30 11:57:33 [main] INFO  LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-30 11:57:35 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/a]}" onto public void com.hsxy.tourism.web.controller.JedisController.Test()
+2017-03-30 11:57:35 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/json]}" onto public com.alibaba.fastjson.JSONObject com.hsxy.tourism.web.WelcomeController.welcome1()
+2017-03-30 11:57:35 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome2()
+2017-03-30 11:57:35 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter2]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome3()
+2017-03-30 11:57:35 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/back/main]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome4()
+2017-03-30 11:57:35 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-03-30 11:57:35 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-30 11:57:35 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/home] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-30 11:57:35 [main] INFO  SimpleUrlHandlerMapping:341 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-30 11:57:35 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/main] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-30 11:57:35 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-30 11:57:35 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2017-03-30 11:57:35 [main] INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@239b0f9d: startup date [Thu Mar 30 11:57:23 CST 2017]; root of context hierarchy
+2017-03-30 11:57:36 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='**/js/**'], []
+2017-03-30 11:57:36 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='**/css/**'], []
+2017-03-30 11:57:36 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@118c1faa, org.springframework.security.web.context.SecurityContextPersistenceFilter@736a8aea, org.springframework.security.web.header.HeaderWriterFilter@5003c114, org.springframework.security.web.csrf.CsrfFilter@4629dde5, org.springframework.security.web.authentication.logout.LogoutFilter@4f6a5cc9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2e564c78, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4964d801, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@414d466e, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@11267e87, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@da5b46f, org.springframework.security.web.session.SessionManagementFilter@2487b621, org.springframework.security.web.access.ExceptionTranslationFilter@769a9b7a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7077ae9c]
+2017-03-30 11:57:37 [main] INFO  AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-03-30 11:57:37 [main] INFO  Http11NioProtocol:179 - Initializing ProtocolHandler ["http-nio-8080"]
+2017-03-30 11:57:37 [main] INFO  Http11NioProtocol:179 - Starting ProtocolHandler [http-nio-8080]
+2017-03-30 11:57:37 [main] INFO  NioSelectorPool:179 - Using a shared selector for servlet write/read
+2017-03-30 11:57:38 [main] INFO  TomcatEmbeddedServletContainer:185 - Tomcat started on port(s): 8080 (http)
+2017-03-30 11:57:38 [main] INFO  Application:57 - Started Application in 15.162 seconds (JVM running for 16.454)
+2017-03-30 11:57:49 [http-nio-8080-exec-1] INFO  [/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-03-30 11:57:49 [http-nio-8080-exec-1] INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-03-30 11:57:49 [http-nio-8080-exec-1] INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 99 ms
+2017-03-30 11:58:42 [main] INFO  Application:48 - Starting Application on PC-20160708UCGF with PID 8920 (D:\Java8\git\tourism\target\classes started by Administrator in D:\Java8\git\tourism)
+2017-03-30 11:58:42 [main] INFO  Application:665 - The following profiles are active: dev
+2017-03-30 11:58:43 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@239b0f9d: startup date [Thu Mar 30 11:58:43 CST 2017]; root of context hierarchy
+2017-03-30 11:58:43 [background-preinit] INFO  Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-03-30 11:58:45 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-03-30 11:58:46 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-03-30 11:58:46 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.UserDao.
+2017-03-30 11:58:47 [main] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a81a77ad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-30 11:58:49 [main] INFO  TomcatEmbeddedServletContainer:87 - Tomcat initialized with port(s): 8080 (http)
+2017-03-30 11:58:49 [main] INFO  StandardService:179 - Starting service Tomcat
+2017-03-30 11:58:49 [main] INFO  StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-03-30 11:58:49 [localhost-startStop-1] INFO  TldScanner:179 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-03-30 11:58:49 [localhost-startStop-1] INFO  [/]:179 - Initializing Spring embedded WebApplicationContext
+2017-03-30 11:58:49 [localhost-startStop-1] INFO  ContextLoader:276 - Root WebApplicationContext: initialization completed in 6796 ms
+2017-03-30 11:58:50 [localhost-startStop-1] INFO  FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-03-30 11:58:50 [localhost-startStop-1] INFO  DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-03-30 11:58:50 [localhost-startStop-1] INFO  ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-03-30 11:58:51 [main] INFO  LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-30 11:58:51 [main] INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-30 11:58:51 [main] INFO  Version:37 - HHH000412: Hibernate Core {5.0.11.Final}
+2017-03-30 11:58:51 [main] INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-03-30 11:58:51 [main] INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-03-30 11:58:51 [main] INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-30 11:58:51 [main] INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-03-30 11:58:52 [main] INFO  SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-03-30 11:58:53 [main] INFO  LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-30 11:58:54 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/a]}" onto public void com.hsxy.tourism.web.controller.JedisController.Test()
+2017-03-30 11:58:54 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/json]}" onto public com.alibaba.fastjson.JSONObject com.hsxy.tourism.web.WelcomeController.welcome1()
+2017-03-30 11:58:54 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome2()
+2017-03-30 11:58:54 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter2]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome3()
+2017-03-30 11:58:54 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/back/main]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome4()
+2017-03-30 11:58:54 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-03-30 11:58:54 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-30 11:58:54 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/home] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-30 11:58:54 [main] INFO  SimpleUrlHandlerMapping:341 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-30 11:58:54 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/main] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-30 11:58:54 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-30 11:58:54 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2017-03-30 11:58:55 [main] INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@239b0f9d: startup date [Thu Mar 30 11:58:43 CST 2017]; root of context hierarchy
+2017-03-30 11:58:55 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2017-03-30 11:58:55 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2017-03-30 11:58:56 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70b0dc92, org.springframework.security.web.context.SecurityContextPersistenceFilter@2dc319cf, org.springframework.security.web.header.HeaderWriterFilter@7674f9d4, org.springframework.security.web.csrf.CsrfFilter@55a07f97, org.springframework.security.web.authentication.logout.LogoutFilter@20276412, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7ff7e353, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@34d26a68, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@22ba30b0, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@7f7f544a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@309d54ac, org.springframework.security.web.session.SessionManagementFilter@22a2e581, org.springframework.security.web.access.ExceptionTranslationFilter@5cd6a827, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5e75cf7a]
+2017-03-30 11:58:57 [main] INFO  AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-03-30 11:58:58 [main] INFO  Http11NioProtocol:179 - Initializing ProtocolHandler ["http-nio-8080"]
+2017-03-30 11:58:58 [main] INFO  Http11NioProtocol:179 - Starting ProtocolHandler [http-nio-8080]
+2017-03-30 11:58:58 [main] INFO  NioSelectorPool:179 - Using a shared selector for servlet write/read
+2017-03-30 11:58:58 [main] INFO  TomcatEmbeddedServletContainer:185 - Tomcat started on port(s): 8080 (http)
+2017-03-30 11:58:58 [main] INFO  Application:57 - Started Application in 15.926 seconds (JVM running for 17.321)
+2017-03-30 11:59:50 [http-nio-8080-exec-1] INFO  [/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-03-30 11:59:50 [http-nio-8080-exec-1] INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-03-30 11:59:50 [http-nio-8080-exec-1] INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 43 ms
+2017-03-30 12:01:58 [main] INFO  Application:48 - Starting Application on PC-20160708UCGF with PID 8208 (D:\Java8\git\tourism\target\classes started by Administrator in D:\Java8\git\tourism)
+2017-03-30 12:01:58 [main] INFO  Application:665 - The following profiles are active: dev
+2017-03-30 12:01:58 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a530d0a: startup date [Thu Mar 30 12:01:58 CST 2017]; root of context hierarchy
+2017-03-30 12:01:58 [background-preinit] INFO  Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-03-30 12:02:00 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-03-30 12:02:01 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-03-30 12:02:01 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.UserDao.
+2017-03-30 12:02:01 [main] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$47cbacaf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-30 12:02:03 [main] INFO  TomcatEmbeddedServletContainer:87 - Tomcat initialized with port(s): 8080 (http)
+2017-03-30 12:02:03 [main] INFO  StandardService:179 - Starting service Tomcat
+2017-03-30 12:02:03 [main] INFO  StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-03-30 12:02:03 [localhost-startStop-1] INFO  TldScanner:179 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-03-30 12:02:03 [localhost-startStop-1] INFO  [/]:179 - Initializing Spring embedded WebApplicationContext
+2017-03-30 12:02:03 [localhost-startStop-1] INFO  ContextLoader:276 - Root WebApplicationContext: initialization completed in 4783 ms
+2017-03-30 12:02:03 [localhost-startStop-1] INFO  FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-03-30 12:02:03 [localhost-startStop-1] INFO  DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-03-30 12:02:03 [localhost-startStop-1] INFO  ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-03-30 12:02:04 [main] INFO  LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-30 12:02:04 [main] INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-30 12:02:04 [main] INFO  Version:37 - HHH000412: Hibernate Core {5.0.11.Final}
+2017-03-30 12:02:04 [main] INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-03-30 12:02:04 [main] INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-03-30 12:02:04 [main] INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-30 12:02:05 [main] INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-03-30 12:02:05 [main] INFO  SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-03-30 12:02:06 [main] INFO  LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-30 12:02:06 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/a]}" onto public void com.hsxy.tourism.web.controller.JedisController.Test()
+2017-03-30 12:02:06 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/json]}" onto public com.alibaba.fastjson.JSONObject com.hsxy.tourism.web.WelcomeController.welcome1()
+2017-03-30 12:02:06 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome2()
+2017-03-30 12:02:06 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter2]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome3()
+2017-03-30 12:02:06 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/back/main]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome4()
+2017-03-30 12:02:06 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-03-30 12:02:06 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-30 12:02:06 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/home] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-30 12:02:06 [main] INFO  SimpleUrlHandlerMapping:341 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-30 12:02:06 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/main] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-30 12:02:06 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-30 12:02:06 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2017-03-30 12:02:07 [main] INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a530d0a: startup date [Thu Mar 30 12:01:58 CST 2017]; root of context hierarchy
+2017-03-30 12:02:07 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2017-03-30 12:02:07 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2017-03-30 12:02:07 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/images/**'], []
+2017-03-30 12:02:07 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/backtool/**'], []
+2017-03-30 12:02:07 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/fonts/**'], []
+2017-03-30 12:02:07 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4c02899, org.springframework.security.web.context.SecurityContextPersistenceFilter@3265995e, org.springframework.security.web.header.HeaderWriterFilter@4bca8eaf, org.springframework.security.web.csrf.CsrfFilter@45d38165, org.springframework.security.web.authentication.logout.LogoutFilter@4bb9f7d4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@c6c84fa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4df13dd0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@50b38342, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@25f14e93, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b895e76, org.springframework.security.web.session.SessionManagementFilter@b8142f4, org.springframework.security.web.access.ExceptionTranslationFilter@6a0e97fc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@63a72cc6]
+2017-03-30 12:02:08 [main] INFO  AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-03-30 12:02:08 [main] INFO  Http11NioProtocol:179 - Initializing ProtocolHandler ["http-nio-8080"]
+2017-03-30 12:02:08 [main] INFO  Http11NioProtocol:179 - Starting ProtocolHandler [http-nio-8080]
+2017-03-30 12:02:08 [main] INFO  NioSelectorPool:179 - Using a shared selector for servlet write/read
+2017-03-30 12:02:08 [main] INFO  TomcatEmbeddedServletContainer:185 - Tomcat started on port(s): 8080 (http)
+2017-03-30 12:02:08 [main] INFO  Application:57 - Started Application in 10.516 seconds (JVM running for 11.833)
+2017-03-30 14:24:27 [http-nio-8080-exec-2] INFO  [/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-03-30 14:24:27 [http-nio-8080-exec-2] INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-03-30 14:24:27 [http-nio-8080-exec-2] INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 296 ms
+2017-03-31 15:48:00 [main] INFO  Application:48 - Starting Application on PC-20160708UCGF with PID 12916 (D:\Java8\git\tourism\target\classes started by Administrator in D:\Java8\git\tourism)
+2017-03-31 15:48:00 [main] INFO  Application:665 - The following profiles are active: dev
+2017-03-31 15:48:01 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@239b0f9d: startup date [Fri Mar 31 15:48:01 CST 2017]; root of context hierarchy
+2017-03-31 15:48:01 [background-preinit] INFO  Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-03-31 15:48:05 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-03-31 15:48:05 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-03-31 15:48:05 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.UserDao.
+2017-03-31 15:48:06 [main] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d4ea5b17] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-31 15:48:08 [main] INFO  TomcatEmbeddedServletContainer:87 - Tomcat initialized with port(s): 8080 (http)
+2017-03-31 15:48:08 [main] INFO  StandardService:179 - Starting service Tomcat
+2017-03-31 15:48:08 [main] INFO  StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-03-31 15:48:09 [localhost-startStop-1] INFO  TldScanner:179 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-03-31 15:48:09 [localhost-startStop-1] INFO  [/]:179 - Initializing Spring embedded WebApplicationContext
+2017-03-31 15:48:09 [localhost-startStop-1] INFO  ContextLoader:276 - Root WebApplicationContext: initialization completed in 8446 ms
+2017-03-31 15:48:10 [localhost-startStop-1] INFO  FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-03-31 15:48:10 [localhost-startStop-1] INFO  DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-03-31 15:48:10 [localhost-startStop-1] INFO  ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-03-31 15:48:12 [main] INFO  LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-31 15:48:12 [main] INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-31 15:48:12 [main] INFO  Version:37 - HHH000412: Hibernate Core {5.0.11.Final}
+2017-03-31 15:48:12 [main] INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-03-31 15:48:12 [main] INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-03-31 15:48:12 [main] INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-31 15:48:13 [main] INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-03-31 15:48:14 [main] INFO  SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-03-31 15:48:15 [main] INFO  LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-31 15:48:17 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/a]}" onto public void com.hsxy.tourism.web.controller.JedisController.Test()
+2017-03-31 15:48:17 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/json]}" onto public com.alibaba.fastjson.JSONObject com.hsxy.tourism.web.WelcomeController.welcome1()
+2017-03-31 15:48:17 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome2()
+2017-03-31 15:48:17 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter2]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome3()
+2017-03-31 15:48:17 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/back/main]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome4()
+2017-03-31 15:48:17 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-03-31 15:48:17 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-31 15:48:17 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/home] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-31 15:48:17 [main] INFO  SimpleUrlHandlerMapping:341 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-31 15:48:17 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/main] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-31 15:48:17 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-31 15:48:17 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2017-03-31 15:48:17 [main] INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@239b0f9d: startup date [Fri Mar 31 15:48:01 CST 2017]; root of context hierarchy
+2017-03-31 15:48:17 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2017-03-31 15:48:17 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2017-03-31 15:48:17 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/images/**'], []
+2017-03-31 15:48:17 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/backtool/**'], []
+2017-03-31 15:48:17 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/fonts/**'], []
+2017-03-31 15:48:17 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@260ccf0, org.springframework.security.web.context.SecurityContextPersistenceFilter@27e656e6, org.springframework.security.web.header.HeaderWriterFilter@438a65a7, org.springframework.security.web.csrf.CsrfFilter@3ef7fb04, org.springframework.security.web.authentication.logout.LogoutFilter@df04d12, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6fe91918, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6b6fde93, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@73c1dda3, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@f5b4ca6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2566247d, org.springframework.security.web.session.SessionManagementFilter@75f446df, org.springframework.security.web.access.ExceptionTranslationFilter@4e0139, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5b6ec94a]
+2017-03-31 15:48:19 [main] INFO  AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-03-31 15:48:19 [main] INFO  Http11NioProtocol:179 - Initializing ProtocolHandler ["http-nio-8080"]
+2017-03-31 15:48:19 [main] INFO  Http11NioProtocol:179 - Starting ProtocolHandler [http-nio-8080]
+2017-03-31 15:48:19 [main] INFO  NioSelectorPool:179 - Using a shared selector for servlet write/read
+2017-03-31 15:48:19 [main] INFO  TomcatEmbeddedServletContainer:185 - Tomcat started on port(s): 8080 (http)
+2017-03-31 15:48:19 [main] INFO  Application:57 - Started Application in 20.52 seconds (JVM running for 28.142)
+2017-03-31 15:51:50 [http-nio-8080-exec-1] INFO  [/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-03-31 15:51:50 [http-nio-8080-exec-1] INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-03-31 15:51:50 [http-nio-8080-exec-1] INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 35 ms
+2017-03-31 16:34:11 [main] INFO  Application:48 - Starting Application on PC-20160708UCGF with PID 9644 (D:\Java8\git\tourism\target\classes started by Administrator in D:\Java8\git\tourism)
+2017-03-31 16:34:11 [main] INFO  Application:665 - The following profiles are active: dev
+2017-03-31 16:34:12 [background-preinit] INFO  Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-03-31 16:34:12 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@239b0f9d: startup date [Fri Mar 31 16:34:12 CST 2017]; root of context hierarchy
+2017-03-31 16:34:14 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-03-31 16:34:14 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-03-31 16:34:14 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.UserDao.
+2017-03-31 16:34:15 [main] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e173df44] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-31 16:34:16 [main] INFO  TomcatEmbeddedServletContainer:87 - Tomcat initialized with port(s): 8080 (http)
+2017-03-31 16:34:16 [main] INFO  StandardService:179 - Starting service Tomcat
+2017-03-31 16:34:16 [main] INFO  StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-03-31 16:34:17 [localhost-startStop-1] INFO  TldScanner:179 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-03-31 16:34:17 [localhost-startStop-1] INFO  [/]:179 - Initializing Spring embedded WebApplicationContext
+2017-03-31 16:34:17 [localhost-startStop-1] INFO  ContextLoader:276 - Root WebApplicationContext: initialization completed in 5111 ms
+2017-03-31 16:34:17 [localhost-startStop-1] INFO  FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-03-31 16:34:17 [localhost-startStop-1] INFO  DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-03-31 16:34:17 [localhost-startStop-1] INFO  ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-03-31 16:34:18 [main] INFO  LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-31 16:34:18 [main] INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-31 16:34:18 [main] INFO  Version:37 - HHH000412: Hibernate Core {5.0.11.Final}
+2017-03-31 16:34:18 [main] INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-03-31 16:34:18 [main] INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-03-31 16:34:19 [main] INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-31 16:34:19 [main] INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-03-31 16:34:20 [main] INFO  SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-03-31 16:34:20 [main] INFO  LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-31 16:34:21 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/a]}" onto public void com.hsxy.tourism.web.controller.JedisController.Test()
+2017-03-31 16:34:21 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/json]}" onto public com.alibaba.fastjson.JSONObject com.hsxy.tourism.web.WelcomeController.welcome1()
+2017-03-31 16:34:21 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome2()
+2017-03-31 16:34:21 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter2]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome3()
+2017-03-31 16:34:21 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/back/main]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome4()
+2017-03-31 16:34:21 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-03-31 16:34:21 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-31 16:34:21 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/home] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-31 16:34:21 [main] INFO  SimpleUrlHandlerMapping:341 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-31 16:34:21 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/main] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-31 16:34:21 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-31 16:34:21 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2017-03-31 16:34:21 [main] INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@239b0f9d: startup date [Fri Mar 31 16:34:12 CST 2017]; root of context hierarchy
+2017-03-31 16:34:22 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2017-03-31 16:34:22 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2017-03-31 16:34:22 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/images/**'], []
+2017-03-31 16:34:22 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/backtool/**'], []
+2017-03-31 16:34:22 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/fonts/**'], []
+2017-03-31 16:34:22 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@296949c8, org.springframework.security.web.context.SecurityContextPersistenceFilter@16c1345b, org.springframework.security.web.header.HeaderWriterFilter@11678469, org.springframework.security.web.csrf.CsrfFilter@3e563293, org.springframework.security.web.authentication.logout.LogoutFilter@3e5ed0d4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7d49fe37, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c41931a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1104ad6a, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@231c521e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1be3a294, org.springframework.security.web.session.SessionManagementFilter@36c1b6ff, org.springframework.security.web.access.ExceptionTranslationFilter@241abc2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@749ffdc7]
+2017-03-31 16:34:23 [main] INFO  AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-03-31 16:34:23 [main] INFO  Http11NioProtocol:179 - Initializing ProtocolHandler ["http-nio-8080"]
+2017-03-31 16:34:23 [main] INFO  Http11NioProtocol:179 - Starting ProtocolHandler [http-nio-8080]
+2017-03-31 16:34:23 [main] INFO  NioSelectorPool:179 - Using a shared selector for servlet write/read
+2017-03-31 16:34:23 [main] INFO  TomcatEmbeddedServletContainer:185 - Tomcat started on port(s): 8080 (http)
+2017-03-31 16:34:23 [main] INFO  Application:57 - Started Application in 12.396 seconds (JVM running for 13.684)
+2017-03-31 16:35:01 [http-nio-8080-exec-1] INFO  [/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-03-31 16:35:01 [http-nio-8080-exec-1] INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-03-31 16:35:01 [http-nio-8080-exec-1] INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms
+2017-03-31 16:38:50 [main] INFO  Application:48 - Starting Application on PC-20160708UCGF with PID 5232 (D:\Java8\git\tourism\target\classes started by Administrator in D:\Java8\git\tourism)
+2017-03-31 16:38:50 [main] INFO  Application:665 - The following profiles are active: dev
+2017-03-31 16:38:50 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@239b0f9d: startup date [Fri Mar 31 16:38:50 CST 2017]; root of context hierarchy
+2017-03-31 16:38:51 [background-preinit] INFO  Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-03-31 16:38:54 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-03-31 16:38:54 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-03-31 16:38:54 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.UserDao.
+2017-03-31 16:38:56 [main] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$dc5132b8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-31 16:38:59 [main] INFO  TomcatEmbeddedServletContainer:87 - Tomcat initialized with port(s): 8080 (http)
+2017-03-31 16:38:59 [main] INFO  StandardService:179 - Starting service Tomcat
+2017-03-31 16:38:59 [main] INFO  StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-03-31 16:39:00 [localhost-startStop-1] INFO  TldScanner:179 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-03-31 16:39:00 [localhost-startStop-1] INFO  [/]:179 - Initializing Spring embedded WebApplicationContext
+2017-03-31 16:39:00 [localhost-startStop-1] INFO  ContextLoader:276 - Root WebApplicationContext: initialization completed in 9120 ms
+2017-03-31 16:39:00 [localhost-startStop-1] INFO  FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-03-31 16:39:00 [localhost-startStop-1] INFO  DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-03-31 16:39:00 [localhost-startStop-1] INFO  ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-03-31 16:39:02 [main] INFO  LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-31 16:39:02 [main] INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-31 16:39:02 [main] INFO  Version:37 - HHH000412: Hibernate Core {5.0.11.Final}
+2017-03-31 16:39:02 [main] INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-03-31 16:39:02 [main] INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-03-31 16:39:02 [main] INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-31 16:39:03 [main] INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-03-31 16:39:04 [main] INFO  SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-03-31 16:39:05 [main] INFO  LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-31 16:39:07 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/a]}" onto public void com.hsxy.tourism.web.controller.JedisController.Test()
+2017-03-31 16:39:07 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/json]}" onto public com.alibaba.fastjson.JSONObject com.hsxy.tourism.web.WelcomeController.welcome1()
+2017-03-31 16:39:07 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome2()
+2017-03-31 16:39:07 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter2]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome3()
+2017-03-31 16:39:07 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/back/main]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome4()
+2017-03-31 16:39:07 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-03-31 16:39:07 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-31 16:39:07 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/home] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-31 16:39:07 [main] INFO  SimpleUrlHandlerMapping:341 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-31 16:39:07 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/main] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-31 16:39:07 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-31 16:39:07 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/index] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-31 16:39:07 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2017-03-31 16:39:07 [main] INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@239b0f9d: startup date [Fri Mar 31 16:38:50 CST 2017]; root of context hierarchy
+2017-03-31 16:39:08 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2017-03-31 16:39:08 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2017-03-31 16:39:08 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/images/**'], []
+2017-03-31 16:39:08 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/backtool/**'], []
+2017-03-31 16:39:08 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/fonts/**'], []
+2017-03-31 16:39:08 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@750adad8, org.springframework.security.web.context.SecurityContextPersistenceFilter@b1f36e5, org.springframework.security.web.header.HeaderWriterFilter@3180131e, org.springframework.security.web.csrf.CsrfFilter@3af6c672, org.springframework.security.web.authentication.logout.LogoutFilter@c3a1d7f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@c770b57, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@397f925e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2148849f, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@55731ccd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@41935a9d, org.springframework.security.web.session.SessionManagementFilter@3b8a063d, org.springframework.security.web.access.ExceptionTranslationFilter@350d9d23, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4d359c69]
+2017-03-31 16:39:10 [main] INFO  AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-03-31 16:39:10 [main] INFO  Http11NioProtocol:179 - Initializing ProtocolHandler ["http-nio-8080"]
+2017-03-31 16:39:10 [main] INFO  Http11NioProtocol:179 - Starting ProtocolHandler [http-nio-8080]
+2017-03-31 16:39:10 [main] INFO  NioSelectorPool:179 - Using a shared selector for servlet write/read
+2017-03-31 16:39:11 [main] INFO  TomcatEmbeddedServletContainer:185 - Tomcat started on port(s): 8080 (http)
+2017-03-31 16:39:11 [main] INFO  Application:57 - Started Application in 21.333 seconds (JVM running for 26.567)
+2017-03-31 16:41:06 [http-nio-8080-exec-1] INFO  [/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-03-31 16:41:06 [http-nio-8080-exec-1] INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-03-31 16:41:06 [http-nio-8080-exec-1] INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 41 ms
+2017-03-31 16:43:54 [main] INFO  Application:48 - Starting Application on PC-20160708UCGF with PID 11472 (D:\Java8\git\tourism\target\classes started by Administrator in D:\Java8\git\tourism)
+2017-03-31 16:43:54 [main] INFO  Application:665 - The following profiles are active: dev
+2017-03-31 16:43:54 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@239b0f9d: startup date [Fri Mar 31 16:43:54 CST 2017]; root of context hierarchy
+2017-03-31 16:43:54 [background-preinit] INFO  Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-03-31 16:43:57 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-03-31 16:43:58 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-03-31 16:43:58 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.UserDao.
+2017-03-31 16:43:59 [main] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$56237ca4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-31 16:44:01 [main] INFO  TomcatEmbeddedServletContainer:87 - Tomcat initialized with port(s): 8080 (http)
+2017-03-31 16:44:01 [main] INFO  StandardService:179 - Starting service Tomcat
+2017-03-31 16:44:01 [main] INFO  StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-03-31 16:44:02 [localhost-startStop-1] INFO  TldScanner:179 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-03-31 16:44:02 [localhost-startStop-1] INFO  [/]:179 - Initializing Spring embedded WebApplicationContext
+2017-03-31 16:44:02 [localhost-startStop-1] INFO  ContextLoader:276 - Root WebApplicationContext: initialization completed in 8090 ms
+2017-03-31 16:44:02 [localhost-startStop-1] INFO  FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-03-31 16:44:02 [localhost-startStop-1] INFO  DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-03-31 16:44:02 [localhost-startStop-1] INFO  ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-03-31 16:44:04 [main] INFO  LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-31 16:44:04 [main] INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-31 16:44:05 [main] INFO  Version:37 - HHH000412: Hibernate Core {5.0.11.Final}
+2017-03-31 16:44:05 [main] INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-03-31 16:44:05 [main] INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-03-31 16:44:05 [main] INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-31 16:44:05 [main] INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-03-31 16:44:06 [main] INFO  SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-03-31 16:44:07 [main] INFO  LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-31 16:44:08 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/a]}" onto public void com.hsxy.tourism.web.controller.JedisController.Test()
+2017-03-31 16:44:08 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/json]}" onto public com.alibaba.fastjson.JSONObject com.hsxy.tourism.web.WelcomeController.welcome1()
+2017-03-31 16:44:08 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome2()
+2017-03-31 16:44:08 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter2]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome3()
+2017-03-31 16:44:08 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/back/main]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome4()
+2017-03-31 16:44:08 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-03-31 16:44:08 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-31 16:44:08 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/index] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-31 16:44:08 [main] INFO  SimpleUrlHandlerMapping:341 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-31 16:44:08 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/main] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-31 16:44:08 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-31 16:44:08 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2017-03-31 16:44:08 [main] INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@239b0f9d: startup date [Fri Mar 31 16:43:54 CST 2017]; root of context hierarchy
+2017-03-31 16:44:09 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2017-03-31 16:44:09 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2017-03-31 16:44:09 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/images/**'], []
+2017-03-31 16:44:09 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/backtool/**'], []
+2017-03-31 16:44:09 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/fonts/**'], []
+2017-03-31 16:44:09 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@11267e87, org.springframework.security.web.context.SecurityContextPersistenceFilter@3d2ff73a, org.springframework.security.web.header.HeaderWriterFilter@2d568cff, org.springframework.security.web.csrf.CsrfFilter@4c9bed65, org.springframework.security.web.authentication.logout.LogoutFilter@7878459f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2604940, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@504b4a97, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@49741e80, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@470866d1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@118c1faa, org.springframework.security.web.session.SessionManagementFilter@6e4bccc, org.springframework.security.web.access.ExceptionTranslationFilter@5f01361e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6de4071b]
+2017-03-31 16:44:11 [main] INFO  AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-03-31 16:44:11 [main] INFO  Http11NioProtocol:179 - Initializing ProtocolHandler ["http-nio-8080"]
+2017-03-31 16:44:11 [main] INFO  Http11NioProtocol:179 - Starting ProtocolHandler [http-nio-8080]
+2017-03-31 16:44:11 [main] INFO  NioSelectorPool:179 - Using a shared selector for servlet write/read
+2017-03-31 16:44:11 [main] INFO  TomcatEmbeddedServletContainer:185 - Tomcat started on port(s): 8080 (http)
+2017-03-31 16:44:11 [main] INFO  Application:57 - Started Application in 17.89 seconds (JVM running for 22.205)
+2017-03-31 16:44:18 [http-nio-8080-exec-1] INFO  [/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-03-31 16:44:18 [http-nio-8080-exec-1] INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-03-31 16:44:18 [http-nio-8080-exec-1] INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 46 ms
+2017-03-31 17:20:37 [main] INFO  Application:48 - Starting Application on PC-20160708UCGF with PID 13720 (D:\Java8\git\tourism\target\classes started by Administrator in D:\Java8\git\tourism)
+2017-03-31 17:20:37 [main] INFO  Application:665 - The following profiles are active: dev
+2017-03-31 17:20:37 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@239b0f9d: startup date [Fri Mar 31 17:20:37 CST 2017]; root of context hierarchy
+2017-03-31 17:20:38 [background-preinit] INFO  Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-03-31 17:20:40 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-03-31 17:20:41 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-03-31 17:20:41 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.UserDao.
+2017-03-31 17:20:42 [main] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4e62b13] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-31 17:20:45 [main] INFO  TomcatEmbeddedServletContainer:87 - Tomcat initialized with port(s): 8080 (http)
+2017-03-31 17:20:45 [main] INFO  StandardService:179 - Starting service Tomcat
+2017-03-31 17:20:45 [main] INFO  StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-03-31 17:20:45 [localhost-startStop-1] INFO  TldScanner:179 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-03-31 17:20:45 [localhost-startStop-1] INFO  [/]:179 - Initializing Spring embedded WebApplicationContext
+2017-03-31 17:20:45 [localhost-startStop-1] INFO  ContextLoader:276 - Root WebApplicationContext: initialization completed in 8298 ms
+2017-03-31 17:20:46 [localhost-startStop-1] INFO  FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-03-31 17:20:46 [localhost-startStop-1] INFO  DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-03-31 17:20:46 [localhost-startStop-1] INFO  ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-03-31 17:20:48 [main] INFO  LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-31 17:20:48 [main] INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-31 17:20:48 [main] INFO  Version:37 - HHH000412: Hibernate Core {5.0.11.Final}
+2017-03-31 17:20:48 [main] INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-03-31 17:20:48 [main] INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-03-31 17:20:48 [main] INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-31 17:20:49 [main] INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-03-31 17:20:50 [main] INFO  SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-03-31 17:20:51 [main] INFO  LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-31 17:20:52 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/a]}" onto public void com.hsxy.tourism.web.controller.JedisController.Test()
+2017-03-31 17:20:52 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/json]}" onto public com.alibaba.fastjson.JSONObject com.hsxy.tourism.web.WelcomeController.welcome1()
+2017-03-31 17:20:52 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome2()
+2017-03-31 17:20:52 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter2]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome3()
+2017-03-31 17:20:52 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/back/main]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome4()
+2017-03-31 17:20:52 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-03-31 17:20:52 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-31 17:20:52 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/index] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-31 17:20:52 [main] INFO  SimpleUrlHandlerMapping:341 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-31 17:20:52 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/main] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-31 17:20:52 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-31 17:20:53 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2017-03-31 17:20:53 [main] INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@239b0f9d: startup date [Fri Mar 31 17:20:37 CST 2017]; root of context hierarchy
+2017-03-31 17:20:53 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2017-03-31 17:20:53 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2017-03-31 17:20:53 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/images/**'], []
+2017-03-31 17:20:53 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/backtool/**'], []
+2017-03-31 17:20:53 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/fonts/**'], []
+2017-03-31 17:20:54 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@d7c00de, org.springframework.security.web.context.SecurityContextPersistenceFilter@63b2418e, org.springframework.security.web.header.HeaderWriterFilter@2b06c388, org.springframework.security.web.csrf.CsrfFilter@3cf7433e, org.springframework.security.web.authentication.logout.LogoutFilter@1e2bc241, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5e085259, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@789f5552, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@8eeb4c5, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@2e096ac0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@11fa11b2, org.springframework.security.web.session.SessionManagementFilter@4629dde5, org.springframework.security.web.access.ExceptionTranslationFilter@eb09112, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@58189132]
+2017-03-31 17:20:56 [main] INFO  AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-03-31 17:20:56 [main] INFO  Http11NioProtocol:179 - Initializing ProtocolHandler ["http-nio-8080"]
+2017-03-31 17:20:56 [main] INFO  Http11NioProtocol:179 - Starting ProtocolHandler [http-nio-8080]
+2017-03-31 17:20:57 [main] INFO  NioSelectorPool:179 - Using a shared selector for servlet write/read
+2017-03-31 17:20:57 [main] INFO  TomcatEmbeddedServletContainer:185 - Tomcat started on port(s): 8080 (http)
+2017-03-31 17:20:57 [main] INFO  Application:57 - Started Application in 21.165 seconds (JVM running for 25.719)
+2017-03-31 17:20:58 [http-nio-8080-exec-1] INFO  [/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-03-31 17:20:58 [http-nio-8080-exec-1] INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-03-31 17:20:58 [http-nio-8080-exec-1] INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 43 ms
+2017-03-31 17:24:16 [main] INFO  Application:48 - Starting Application on PC-20160708UCGF with PID 8020 (D:\Java8\git\tourism\target\classes started by Administrator in D:\Java8\git\tourism)
+2017-03-31 17:24:16 [main] INFO  Application:665 - The following profiles are active: dev
+2017-03-31 17:24:16 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@239b0f9d: startup date [Fri Mar 31 17:24:16 CST 2017]; root of context hierarchy
+2017-03-31 17:24:16 [background-preinit] INFO  Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-03-31 17:24:19 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-03-31 17:24:19 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-03-31 17:24:19 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.UserDao.
+2017-03-31 17:24:20 [main] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$55874d1f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-31 17:24:21 [main] INFO  TomcatEmbeddedServletContainer:87 - Tomcat initialized with port(s): 8080 (http)
+2017-03-31 17:24:21 [main] INFO  StandardService:179 - Starting service Tomcat
+2017-03-31 17:24:21 [main] INFO  StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-03-31 17:24:22 [localhost-startStop-1] INFO  TldScanner:179 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-03-31 17:24:22 [localhost-startStop-1] INFO  [/]:179 - Initializing Spring embedded WebApplicationContext
+2017-03-31 17:24:22 [localhost-startStop-1] INFO  ContextLoader:276 - Root WebApplicationContext: initialization completed in 5274 ms
+2017-03-31 17:24:22 [localhost-startStop-1] INFO  FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-03-31 17:24:22 [localhost-startStop-1] INFO  DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-03-31 17:24:22 [localhost-startStop-1] INFO  ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-03-31 17:24:23 [main] INFO  LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-31 17:24:23 [main] INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-31 17:24:23 [main] INFO  Version:37 - HHH000412: Hibernate Core {5.0.11.Final}
+2017-03-31 17:24:23 [main] INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-03-31 17:24:23 [main] INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-03-31 17:24:24 [main] INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-31 17:24:24 [main] INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-03-31 17:24:25 [main] INFO  SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-03-31 17:24:25 [main] INFO  LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-31 17:24:26 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/a]}" onto public void com.hsxy.tourism.web.controller.JedisController.Test()
+2017-03-31 17:24:26 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/json]}" onto public com.alibaba.fastjson.JSONObject com.hsxy.tourism.web.WelcomeController.welcome1()
+2017-03-31 17:24:26 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome2()
+2017-03-31 17:24:26 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter2]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome3()
+2017-03-31 17:24:26 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/back/main]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome4()
+2017-03-31 17:24:26 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-03-31 17:24:26 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-31 17:24:26 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/index] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-31 17:24:26 [main] INFO  SimpleUrlHandlerMapping:341 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-31 17:24:26 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/main] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-31 17:24:26 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-31 17:24:26 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2017-03-31 17:24:26 [main] INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@239b0f9d: startup date [Fri Mar 31 17:24:16 CST 2017]; root of context hierarchy
+2017-03-31 17:24:27 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2017-03-31 17:24:27 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2017-03-31 17:24:27 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/images/**'], []
+2017-03-31 17:24:27 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/backtool/**'], []
+2017-03-31 17:24:27 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/fonts/**'], []
+2017-03-31 17:24:27 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@574413bd, org.springframework.security.web.context.SecurityContextPersistenceFilter@67afc9b6, org.springframework.security.web.header.HeaderWriterFilter@115924ba, org.springframework.security.web.authentication.logout.LogoutFilter@206e5183, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@78e59b04, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7a79d99c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5039c2cf, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@5ed88e31, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ad9fea, org.springframework.security.web.session.SessionManagementFilter@252d2ac0, org.springframework.security.web.access.ExceptionTranslationFilter@33502cfe, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@31daf094]
+2017-03-31 17:24:29 [main] INFO  AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-03-31 17:24:29 [main] INFO  Http11NioProtocol:179 - Initializing ProtocolHandler ["http-nio-8080"]
+2017-03-31 17:24:29 [main] INFO  Http11NioProtocol:179 - Starting ProtocolHandler [http-nio-8080]
+2017-03-31 17:24:29 [main] INFO  NioSelectorPool:179 - Using a shared selector for servlet write/read
+2017-03-31 17:24:29 [main] INFO  TomcatEmbeddedServletContainer:185 - Tomcat started on port(s): 8080 (http)
+2017-03-31 17:24:29 [main] INFO  Application:57 - Started Application in 13.009 seconds (JVM running for 14.2)
+2017-03-31 17:24:41 [http-nio-8080-exec-1] INFO  [/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-03-31 17:24:41 [http-nio-8080-exec-1] INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-03-31 17:24:41 [http-nio-8080-exec-1] INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 35 ms
+2017-03-31 17:24:59 [http-nio-8080-exec-2] INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-03-31 17:24:59 [http-nio-8080-exec-2] WARN  BCryptPasswordEncoder:90 - Encoded password does not look like BCrypt
+2017-03-31 17:25:12 [http-nio-8080-exec-4] WARN  BCryptPasswordEncoder:90 - Encoded password does not look like BCrypt
+2017-04-05 09:46:32 [main] INFO  Application:48 - Starting Application on PC-20160708UCGF with PID 6504 (D:\Java8\git\tourism\target\classes started by Administrator in D:\Java8\git\tourism)
+2017-04-05 09:46:32 [main] INFO  Application:665 - The following profiles are active: dev
+2017-04-05 09:46:32 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a530d0a: startup date [Wed Apr 05 09:46:32 CST 2017]; root of context hierarchy
+2017-04-05 09:46:33 [background-preinit] INFO  Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-04-05 09:46:36 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-04-05 09:46:36 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-04-05 09:46:36 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.UserDao.
+2017-04-05 09:46:37 [main] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$47cbacaf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-05 09:46:39 [main] INFO  TomcatEmbeddedServletContainer:87 - Tomcat initialized with port(s): 8080 (http)
+2017-04-05 09:46:39 [main] INFO  StandardService:179 - Starting service Tomcat
+2017-04-05 09:46:39 [main] INFO  StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-04-05 09:46:40 [localhost-startStop-1] INFO  TldScanner:179 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-04-05 09:46:40 [localhost-startStop-1] INFO  [/]:179 - Initializing Spring embedded WebApplicationContext
+2017-04-05 09:46:40 [localhost-startStop-1] INFO  ContextLoader:276 - Root WebApplicationContext: initialization completed in 7326 ms
+2017-04-05 09:46:40 [localhost-startStop-1] INFO  FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-05 09:46:40 [localhost-startStop-1] INFO  DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-04-05 09:46:40 [localhost-startStop-1] INFO  ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-05 09:46:42 [main] INFO  LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-04-05 09:46:42 [main] INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-04-05 09:46:42 [main] INFO  Version:37 - HHH000412: Hibernate Core {5.0.11.Final}
+2017-04-05 09:46:42 [main] INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-04-05 09:46:42 [main] INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-04-05 09:46:43 [main] INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-04-05 09:46:43 [main] INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-04-05 09:46:44 [main] INFO  SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-04-05 09:46:45 [main] INFO  LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-04-05 09:46:47 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/a]}" onto public void com.hsxy.tourism.web.controller.JedisController.Test()
+2017-04-05 09:46:47 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/json]}" onto public com.alibaba.fastjson.JSONObject com.hsxy.tourism.web.WelcomeController.welcome1()
+2017-04-05 09:46:47 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome2()
+2017-04-05 09:46:47 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter2]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome3()
+2017-04-05 09:46:47 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/back/main]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome4()
+2017-04-05 09:46:47 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-05 09:46:47 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-05 09:46:47 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/index] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-04-05 09:46:47 [main] INFO  SimpleUrlHandlerMapping:341 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-04-05 09:46:47 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/main] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-04-05 09:46:47 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-04-05 09:46:47 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2017-04-05 09:46:47 [main] INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a530d0a: startup date [Wed Apr 05 09:46:32 CST 2017]; root of context hierarchy
+2017-04-05 09:46:48 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2017-04-05 09:46:48 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2017-04-05 09:46:48 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/images/**'], []
+2017-04-05 09:46:48 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/backtool/**'], []
+2017-04-05 09:46:48 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/fonts/**'], []
+2017-04-05 09:46:48 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@24435620, org.springframework.security.web.context.SecurityContextPersistenceFilter@52d59507, org.springframework.security.web.header.HeaderWriterFilter@662713b6, org.springframework.security.web.authentication.logout.LogoutFilter@15ad5acb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3c62be3c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3265995e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@30665461, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@4d525897, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c02899, org.springframework.security.web.session.SessionManagementFilter@4bca8eaf, org.springframework.security.web.access.ExceptionTranslationFilter@c0004b7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2c02a007]
+2017-04-05 09:46:49 [main] INFO  AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-04-05 09:46:49 [main] INFO  Http11NioProtocol:179 - Initializing ProtocolHandler ["http-nio-8080"]
+2017-04-05 09:46:49 [main] INFO  Http11NioProtocol:179 - Starting ProtocolHandler [http-nio-8080]
+2017-04-05 09:46:49 [main] INFO  NioSelectorPool:179 - Using a shared selector for servlet write/read
+2017-04-05 09:46:50 [main] INFO  TomcatEmbeddedServletContainer:185 - Tomcat started on port(s): 8080 (http)
+2017-04-05 09:46:50 [main] INFO  Application:57 - Started Application in 19.66 seconds (JVM running for 26.996)
+2017-04-05 09:47:08 [http-nio-8080-exec-1] INFO  [/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-04-05 09:47:08 [http-nio-8080-exec-1] INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-04-05 09:47:08 [http-nio-8080-exec-1] INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 44 ms
+2017-04-05 09:47:34 [http-nio-8080-exec-4] INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-06 10:53:32 [main] INFO  Application:48 - Starting Application on PC-20160708UCGF with PID 10468 (D:\Java8\git\tourism\target\classes started by Administrator in D:\Java8\git\tourism)
+2017-04-06 10:53:32 [main] INFO  Application:665 - The following profiles are active: dev
+2017-04-06 10:53:32 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@239b0f9d: startup date [Thu Apr 06 10:53:32 CST 2017]; root of context hierarchy
+2017-04-06 10:53:33 [background-preinit] INFO  Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-04-06 10:53:37 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-04-06 10:53:37 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-04-06 10:53:37 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.UserDao.
+2017-04-06 10:53:38 [main] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7d582e0f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-06 10:53:40 [main] INFO  TomcatEmbeddedServletContainer:87 - Tomcat initialized with port(s): 8080 (http)
+2017-04-06 10:53:40 [main] INFO  StandardService:179 - Starting service Tomcat
+2017-04-06 10:53:40 [main] INFO  StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-04-06 10:53:41 [localhost-startStop-1] INFO  TldScanner:179 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-04-06 10:53:41 [localhost-startStop-1] INFO  [/]:179 - Initializing Spring embedded WebApplicationContext
+2017-04-06 10:53:41 [localhost-startStop-1] INFO  ContextLoader:276 - Root WebApplicationContext: initialization completed in 8990 ms
+2017-04-06 10:53:42 [localhost-startStop-1] INFO  FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-06 10:53:42 [localhost-startStop-1] INFO  DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-04-06 10:53:42 [localhost-startStop-1] INFO  ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-06 10:53:45 [main] INFO  LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-04-06 10:53:45 [main] INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-04-06 10:53:46 [main] INFO  Version:37 - HHH000412: Hibernate Core {5.0.11.Final}
+2017-04-06 10:53:46 [main] INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-04-06 10:53:46 [main] INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-04-06 10:53:46 [main] INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-04-06 10:53:46 [main] INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-04-06 10:53:48 [main] INFO  SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-04-06 10:53:49 [main] INFO  LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-04-06 10:53:51 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/a]}" onto public void com.hsxy.tourism.web.controller.JedisController.Test()
+2017-04-06 10:53:51 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/json]}" onto public com.alibaba.fastjson.JSONObject com.hsxy.tourism.web.WelcomeController.welcome1()
+2017-04-06 10:53:51 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome2()
+2017-04-06 10:53:51 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter2]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome3()
+2017-04-06 10:53:51 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/back/main]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome4()
+2017-04-06 10:53:51 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-06 10:53:51 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-06 10:53:51 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/index] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-04-06 10:53:51 [main] INFO  SimpleUrlHandlerMapping:341 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-04-06 10:53:51 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/main] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-04-06 10:53:51 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-04-06 10:53:51 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2017-04-06 10:53:51 [main] INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@239b0f9d: startup date [Thu Apr 06 10:53:32 CST 2017]; root of context hierarchy
+2017-04-06 10:53:52 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2017-04-06 10:53:52 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2017-04-06 10:53:52 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/images/**'], []
+2017-04-06 10:53:52 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/backtool/**'], []
+2017-04-06 10:53:52 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/fonts/**'], []
+2017-04-06 10:53:52 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7ff7e353, org.springframework.security.web.context.SecurityContextPersistenceFilter@4b5ceb5d, org.springframework.security.web.header.HeaderWriterFilter@46df794e, org.springframework.security.web.authentication.logout.LogoutFilter@30a1b2ad, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7d0e43d6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ca8f5d7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a574a3b, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@757f47f0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@70680f88, org.springframework.security.web.session.SessionManagementFilter@6cd65042, org.springframework.security.web.access.ExceptionTranslationFilter@7da9b32c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@38213efa]
+2017-04-06 10:53:54 [main] INFO  AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-04-06 10:53:54 [main] INFO  Http11NioProtocol:179 - Initializing ProtocolHandler ["http-nio-8080"]
+2017-04-06 10:53:54 [main] INFO  Http11NioProtocol:179 - Starting ProtocolHandler [http-nio-8080]
+2017-04-06 10:53:54 [main] INFO  NioSelectorPool:179 - Using a shared selector for servlet write/read
+2017-04-06 10:53:54 [main] INFO  TomcatEmbeddedServletContainer:185 - Tomcat started on port(s): 8080 (http)
+2017-04-06 10:53:54 [main] INFO  Application:57 - Started Application in 23.918 seconds (JVM running for 32.711)
+2017-04-21 18:15:03 [main] INFO  Application:48 - Starting Application on PC-20160708UCGF with PID 3560 (D:\Java8\git\tourism\target\classes started by Administrator in D:\Java8\git\tourism)
+2017-04-21 18:15:03 [main] INFO  Application:665 - The following profiles are active: dev
+2017-04-21 18:15:04 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a530d0a: startup date [Fri Apr 21 18:15:04 CST 2017]; root of context hierarchy
+2017-04-21 18:15:07 [background-preinit] INFO  Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-04-21 18:15:21 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-04-21 18:15:21 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-04-21 18:15:21 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.UserDao.
+2017-04-21 18:15:25 [main] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$47cbacaf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-21 18:15:34 [main] INFO  TomcatEmbeddedServletContainer:87 - Tomcat initialized with port(s): 8080 (http)
+2017-04-21 18:15:35 [main] INFO  StandardService:179 - Starting service Tomcat
+2017-04-21 18:15:35 [main] INFO  StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-04-21 18:15:39 [localhost-startStop-1] INFO  TldScanner:179 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-04-21 18:15:39 [localhost-startStop-1] INFO  [/]:179 - Initializing Spring embedded WebApplicationContext
+2017-04-21 18:15:39 [localhost-startStop-1] INFO  ContextLoader:276 - Root WebApplicationContext: initialization completed in 34651 ms
+2017-04-21 18:15:40 [localhost-startStop-1] INFO  FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-21 18:15:40 [localhost-startStop-1] INFO  DelegatingFilterProxyRegistrationBean:258 - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-04-21 18:15:40 [localhost-startStop-1] INFO  ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-21 18:15:48 [main] INFO  LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-04-21 18:15:48 [main] INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-04-21 18:15:50 [main] INFO  Version:37 - HHH000412: Hibernate Core {5.0.11.Final}
+2017-04-21 18:15:50 [main] INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-04-21 18:15:50 [main] INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-04-21 18:15:52 [main] INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-04-21 18:15:54 [main] INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-04-21 18:15:59 [main] INFO  SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-04-21 18:16:01 [main] INFO  LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-04-21 18:16:06 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/a]}" onto public void com.hsxy.tourism.web.controller.JedisController.Test()
+2017-04-21 18:16:06 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/back/main]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome4()
+2017-04-21 18:16:06 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter2]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome3()
+2017-04-21 18:16:06 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/json]}" onto public com.alibaba.fastjson.JSONObject com.hsxy.tourism.web.WelcomeController.welcome1()
+2017-04-21 18:16:06 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome2()
+2017-04-21 18:16:06 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-21 18:16:06 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-21 18:16:06 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/index] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-04-21 18:16:06 [main] INFO  SimpleUrlHandlerMapping:341 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-04-21 18:16:06 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/main] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-04-21 18:16:06 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-04-21 18:16:06 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2017-04-21 18:16:07 [main] INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a530d0a: startup date [Fri Apr 21 18:15:04 CST 2017]; root of context hierarchy
+2017-04-21 18:16:10 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/js/**'], []
+2017-04-21 18:16:10 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/css/**'], []
+2017-04-21 18:16:10 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/images/**'], []
+2017-04-21 18:16:10 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/backtool/**'], []
+2017-04-21 18:16:10 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: Ant [pattern='/fonts/**'], []
+2017-04-21 18:16:10 [main] INFO  DefaultSecurityFilterChain:43 - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b895e76, org.springframework.security.web.context.SecurityContextPersistenceFilter@3265995e, org.springframework.security.web.header.HeaderWriterFilter@4bca8eaf, org.springframework.security.web.authentication.logout.LogoutFilter@4bb9f7d4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@70ce2fb2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4df13dd0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@50b38342, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@24435620, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@74231642, org.springframework.security.web.session.SessionManagementFilter@b8142f4, org.springframework.security.web.access.ExceptionTranslationFilter@27053257, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@61bd0845]
+2017-04-21 18:16:14 [main] INFO  AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-04-21 18:16:15 [main] INFO  Http11NioProtocol:179 - Initializing ProtocolHandler ["http-nio-8080"]
+2017-04-21 18:16:15 [main] INFO  Http11NioProtocol:179 - Starting ProtocolHandler [http-nio-8080]
+2017-04-21 18:16:16 [main] INFO  NioSelectorPool:179 - Using a shared selector for servlet write/read
+2017-04-21 18:16:17 [main] INFO  TomcatEmbeddedServletContainer:185 - Tomcat started on port(s): 8080 (http)
+2017-04-21 18:16:17 [main] INFO  Application:57 - Started Application in 81.029 seconds (JVM running for 95.273)
+2017-04-21 18:16:23 [http-nio-8080-exec-1] INFO  [/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-04-21 18:16:23 [http-nio-8080-exec-1] INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-04-21 18:16:23 [http-nio-8080-exec-1] INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 138 ms
+2017-04-21 18:16:32 [http-nio-8080-exec-4] INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory

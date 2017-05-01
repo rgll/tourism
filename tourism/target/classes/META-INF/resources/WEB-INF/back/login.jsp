@@ -47,14 +47,15 @@
 					<input type="hidden" value="chinese" name="eid" id="eid" />
 				</div>
 			</div> -->
+			<form action="<%=ctxPath%>/login" method="post">
 			<div class="form_info">
 				<div class="field">
 					<label>用户名：</label>
-					<input type="text" class="text" size="20">
+					<input type="text" name="username" class="text" size="20">
 				</div>
 				<div class="field">
 					<label>密　码：</label>
-					<input type="password" class="text" size="20">
+					<input type="password" name="pwd" class="text" size="20">
 				</div>
 				<div class="field">
 					<label>验证码：</label>
@@ -63,9 +64,11 @@
 				</div>
 				<div class="field">
 					<label></label>
-					<button class="button" style="margin-left:50px;_margin-left:48px" onclick="javascript:window.location='back/main.html'"></button>
+					<button class="button" type="submit" style="margin-left:50px;_margin-left:48px;"></button>
+					<button class="button" type="submit" style="position: relative;left:180px;top: -27px;"></button>
 				</div>
 			</div>
+			</form>
 		</div>
 	</div>
 </body>

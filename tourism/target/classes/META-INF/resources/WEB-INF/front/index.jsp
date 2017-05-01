@@ -58,8 +58,8 @@
 			        	<img alt="" src="${ctxPath}/images/002.jpg" style="height: 35px;width: 140px;">
 			    	</div>  
 			        <ul class="nav navbar-nav navbar-right"> 
-			            <li><a href="${ctxPath}/inter2" style="color: black; font-size: 2ex;">注册</a></li> 
-			            <li><a href="${ctxPath}/inter2" style="color: black; font-size: 2ex;"> 登录</a></li> 
+			            <li><a href="${ctxPath}/login" style="color: black; font-size: 2ex;">注册</a></li> 
+			            <li><a href="${ctxPath}/login" style="color: black; font-size: 2ex;"> 登录</a></li> 
 			        </ul> 
 				</div> 
 			</nav>
@@ -536,12 +536,12 @@
 						</div>
 						<div class="clearfix"></div>
 					</div>
-					<p>赵州桥又称安济桥,在石家庄东南四十多公里赵县城南.是当今世界上现存最早、保存最完善的古代敞肩石拱桥.建于公元605年,由著名匠师李春设计和建造,入选中国世界纪录协会世界最早的敞肩石拱桥,创造了世界之最.</p>
+					<p>赵州桥又称安济桥,在石家庄东南四十多公里赵县城南.是当今世界上现存最早、保存最完善的古代敞肩石拱桥.建于公元605年,由著名匠师李春设计和建造,入选中国世界纪录协会世界最早的敞肩石拱桥,创造了世界之最.</p>				
 				</div>
 			</div>
 			<div class="clearfix"></div>
 		</div>
-		<!--gallery-->
+		<!--gallery-->		
 		<!-- team -->
 		<div class="team" id="guides">
 			<div class="container">

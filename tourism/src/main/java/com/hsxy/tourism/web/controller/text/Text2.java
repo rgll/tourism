@@ -1,4 +1,4 @@
-package com.hsxy.tourism.controller;
+package com.hsxy.tourism.web.controller.text;
 
 import java.util.Scanner;
 
