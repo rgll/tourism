@@ -1,4 +1,4 @@
-package com.hsxy.tourism.web.controller;
+package com.hsxy.tourism.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

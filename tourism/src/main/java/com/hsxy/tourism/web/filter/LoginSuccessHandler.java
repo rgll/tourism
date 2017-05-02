@@ -14,7 +14,7 @@ public class LoginSuccessHandler extends SavedRequestAwareAuthenticationSuccessH
 	@Override
 	public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,
 			Authentication authentication) throws IOException, ServletException {
-		// 获得授权后可得到用户信息 可使用SUserService进行数据库操作
+		// 获得授权后可得到用户信息 可使用IUserService进行数据库操作
 		SysUser userDetails = (SysUser) authentication.getPrincipal();
 		/* Set<SysRole> roles = userDetails.getSysRoles(); */
 		// 输出登录提示信息

@@ -174,7 +174,7 @@
 							<ul class="nav navbar-nav">
 								<li><a > </a></li> 
 								<li><a > </a></li> 
-								<li><a href="" >西柏坡 </a></li> 
+								<li><a href="" onclick="scenic(this)" >西柏坡 </a></li> 
 								<li><a href="" >古城正定 </a></li> 
 								<li><a href="" >隆兴寺 </a></li> 
 								<li><a href="" >赵州桥 </a></li> 
@@ -456,7 +456,7 @@
 						</div>
 						<div class="clearfix"></div>
 					</div>
-					<p>野三坡位于河北保定市涞水县境内,是一处新兴旅游区,被称为“北方小桂林”. 距北京仅100公里,它由七个各具功能的景区构成,分别是百里峡、拒马河、百草畔、佛洞塔、龙门峡、金华山以及近年开发的三黄山.</p>　
+					<p>野三坡位于河北保定市涞水县境内,被称为“北方小桂林”.它由七个各具功能的景区构成,分别是百里峡、拒马河、百草畔、佛洞塔、龙门峡、金华山以及三黄山.</p>　
 				</div>
 			</div>
 			<div class="col-md-4 promation-grid">
@@ -736,4 +736,23 @@
 				</div>
 			</div>
 </body>
+<script type="text/javascript">
+function scenic(sc){
+	var name = sc.text;
+	$.ajax({
+		url : '<%=path%>/scenic/ajax/select',
+		type : 'POST',
+		dataType : 'json',
+		data : {
+			name :name,
+		},
+		success:function(data, textStatus, xhr) {
+			
+		},
+		error:function(xhr, textStatus, errorThrown) {
+			alert("失败");
+		}
+	});
+}
+</script>
 </html>

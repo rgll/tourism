@@ -9,7 +9,8 @@ import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import com.hsxy.tourism.service.CustomUserDetailsService;
+
+import com.hsxy.tourism.web.CustomUserDetailsService;
 import com.hsxy.tourism.web.filter.LoginSuccessHandler;
 
 @Configuration
