@@ -13,8 +13,8 @@ public class Scenery {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "scenery_id", length = 10)
-	private String scenery_id;
+	@Column(name = "sceneryId", length = 10)
+	private String sceneryId;
 
 	@Column(name = "local", length = 50)
 	private String local; // 所属地区
@@ -22,8 +22,8 @@ public class Scenery {
 	@Column(name = "name", length = 50)
 	private String name;// 景点名称
 
-	@Column(name = "describe")
-	private String describe;// 景点描述
+	@Column(name = "describ")
+	private String describ;// 景点描述
 
 	@Column(name = "roleId", length = 50)
 	private String roleId; // 角色ID
@@ -31,35 +31,35 @@ public class Scenery {
 	@Column(name = "picture", length = 50)
 	private String picture;// 景点图片
 
-	@Column(name = "tacket_id")
-	private String tacket_id;// 门票id
+	@Column(name = "tacketId")
+	private String tacketId;// 门票id
 
-	@Column(name = "tacket_money", length = 10)
-	private int tacket_money; // 门票单价
+	@Column(name = "tacketMoney", length = 10)
+	private int tacketMoney; // 门票单价
 
 	public Scenery() {
 		super();
 	}
 
-	public Scenery(String scenery_id, String local, String name, String describe, String roleId, String picture,
-			String tacket_id, int tacket_money) {
+	public Scenery(String sceneryId, String local, String name, String describ, String roleId, String picture,
+			String tacketId, int tacketMoney) {
 		super();
-		this.scenery_id = scenery_id;
+		this.sceneryId = sceneryId;
 		this.local = local;
 		this.name = name;
-		this.describe = describe;
+		this.describ = describ;
 		this.roleId = roleId;
 		this.picture = picture;
-		this.tacket_id = tacket_id;
-		this.tacket_money = tacket_money;
+		this.tacketId = tacketId;
+		this.tacketMoney = tacketMoney;
 	}
 
-	public String getScenery_id() {
-		return scenery_id;
+	public String getsceneryId() {
+		return sceneryId;
 	}
 
-	public void setScenery_id(String scenery_id) {
-		this.scenery_id = scenery_id;
+	public void setsceneryId(String sceneryId) {
+		this.sceneryId = sceneryId;
 	}
 
 	public String getLocal() {
@@ -78,12 +78,12 @@ public class Scenery {
 		this.name = name;
 	}
 
-	public String getDescribe() {
-		return describe;
+	public String getdescrib() {
+		return describ;
 	}
 
-	public void setDescribe(String describe) {
-		this.describe = describe;
+	public void setdescrib(String describ) {
+		this.describ = describ;
 	}
 
 	public String getRoleId() {
@@ -102,27 +102,27 @@ public class Scenery {
 		this.picture = picture;
 	}
 
-	public String getTacket_id() {
-		return tacket_id;
+	public String gettacketId() {
+		return tacketId;
 	}
 
-	public void setTacket_id(String tacket_id) {
-		this.tacket_id = tacket_id;
+	public void settacketId(String tacketId) {
+		this.tacketId = tacketId;
 	}
 
-	public int getTacket_money() {
-		return tacket_money;
+	public int gettacketMoney() {
+		return tacketMoney;
 	}
 
-	public void setTacket_money(int tacket_money) {
-		this.tacket_money = tacket_money;
+	public void settacketMoney(int tacketMoney) {
+		this.tacketMoney = tacketMoney;
 	}
 
 	@Override
 	public String toString() {
-		return "Scenery [scenery_id=" + scenery_id + ", local=" + local + ", name=" + name + ", describe=" + describe
-				+ ", roleId=" + roleId + ", picture=" + picture + ", tacket_id=" + tacket_id + ", tacket_money="
-				+ tacket_money + "]";
+		return "Scenery [sceneryId=" + sceneryId + ", local=" + local + ", name=" + name + ", describ=" + describ
+				+ ", roleId=" + roleId + ", picture=" + picture + ", tacketId=" + tacketId + ", tacketMoney="
+				+ tacketMoney + "]";
 	}
 
 }

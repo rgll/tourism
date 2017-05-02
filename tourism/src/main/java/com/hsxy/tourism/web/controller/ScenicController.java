@@ -5,7 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.alibaba.fastjson.JSONObject;
+import com.hsxy.tourism.bean.Scenery;
 import com.hsxy.tourism.service.ScenicService;
 
 @Controller
@@ -17,10 +17,8 @@ public class ScenicController {
 
 	@RequestMapping("/ajax/select")
 	@ResponseBody
-	public JSONObject selectScenic(String name) {
-		JSONObject json = scenicService.select(name);
-
-		return json;
+	public Scenery selectScenic(String name) {
+		return scenicService.select(name);
 	}
 
 }
