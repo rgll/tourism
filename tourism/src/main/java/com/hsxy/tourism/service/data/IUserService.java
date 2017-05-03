@@ -1,8 +1,8 @@
 package com.hsxy.tourism.service.data;
 
-import com.hsxy.tourism.bean.SysUser;
+import com.hsxy.tourism.bean.Users;
 
 public interface IUserService {
 
-	public SysUser findByName(String userName);
+	public Users findByName(String userName);
 }

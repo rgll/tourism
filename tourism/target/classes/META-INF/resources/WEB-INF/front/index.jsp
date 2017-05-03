@@ -174,15 +174,15 @@
 							<ul class="nav navbar-nav">
 								<li><a > </a></li> 
 								<li><a > </a></li> 
-								<li><a href="" onclick="scenic(this)" >西柏坡 </a></li> 
-								<li><a href="" >古城正定 </a></li> 
-								<li><a href="" >隆兴寺 </a></li> 
-								<li><a href="" >赵州桥 </a></li> 
-								<li><a href="" >荣国府 </a></li> 
-								<li><a href="">隆兴寺 </a></li> 
-								<li><a href="">驼梁 </a></li> 
-								<li><a href="">柏林禅寺 </a></li> 
-								<li><a href="">抱犊寨 </a></li> 
+								<li><a onclick="scenic(this)" >西柏坡 </a></li> 
+								<li><a onclick="scenic(this)" >古城正定 </a></li> 
+								<li><a onclick="scenic(this)" >隆兴寺 </a></li> 
+								<li><a onclick="scenic(this)" >赵州桥 </a></li> 
+								<li><a onclick="scenic(this)" >荣国府 </a></li> 
+								<li><a onclick="scenic(this)" >隆兴寺 </a></li> 
+								<li><a onclick="scenic(this)" >驼梁 </a></li> 
+								<li><a onclick="scenic(this)" >柏林禅寺 </a></li> 
+								<li><a onclick="scenic(this)" >抱犊寨 </a></li> 
 								<li><a href="">抱犊寨 </a></li> 
 								<li><a href="">抱犊寨 </a></li> 
 								<li><a href="">抱犊寨 </a></li> 
@@ -739,8 +739,9 @@
 <script type="text/javascript">
 function scenic(sc){
 	var name = sc.text;
-	$.ajax({
-		url : '<%=path%>/scenic/ajax/select',
+	window.location.href = "${ctxPath}/scenic/inter?name="+name;
+	<%-- $.ajax({
+		url : '${ctxPath}/scenic/ajax/select',
 		type : 'POST',
 		dataType : 'json',
 		data : {
@@ -752,7 +753,7 @@ function scenic(sc){
 		error:function(xhr, textStatus, errorThrown) {
 			alert("失败");
 		}
-	});
+	}); --%>
 }
 </script>
 </html>

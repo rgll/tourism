@@ -7,14 +7,23 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/**
+ * 
+ * ClassName: Scenery景点表 <br/>
+ * date: 2017年4月3日 上午11:42:30 <br/>
+ * 
+ * @author Administrator
+ * @version
+ * @since JDK 1.8
+ */
 @Entity
-@Table(name = "scenery")
+@Table(name = "s_scenery")
 public class Scenery {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "sceneryId", length = 10)
-	private String sceneryId;
+	private Integer sceneryId;
 
 	@Column(name = "local", length = 50)
 	private String local; // 所属地区
@@ -25,14 +34,11 @@ public class Scenery {
 	@Column(name = "describ")
 	private String describ;// 景点描述
 
-	@Column(name = "roleId", length = 50)
-	private String roleId; // 角色ID
-
 	@Column(name = "picture", length = 50)
 	private String picture;// 景点图片
 
 	@Column(name = "tacketId")
-	private String tacketId;// 门票id
+	private int tacketId;// 门票id
 
 	@Column(name = "tacketMoney", length = 10)
 	private int tacketMoney; // 门票单价
@@ -41,24 +47,23 @@ public class Scenery {
 		super();
 	}
 
-	public Scenery(String sceneryId, String local, String name, String describ, String roleId, String picture,
-			String tacketId, int tacketMoney) {
+	public Scenery(Integer sceneryId, String local, String name, String describ, String picture, int tacketId,
+			int tacketMoney) {
 		super();
 		this.sceneryId = sceneryId;
 		this.local = local;
 		this.name = name;
 		this.describ = describ;
-		this.roleId = roleId;
 		this.picture = picture;
 		this.tacketId = tacketId;
 		this.tacketMoney = tacketMoney;
 	}
 
-	public String getsceneryId() {
+	public Integer getSceneryId() {
 		return sceneryId;
 	}
 
-	public void setsceneryId(String sceneryId) {
+	public void setSceneryId(Integer sceneryId) {
 		this.sceneryId = sceneryId;
 	}
 
@@ -78,20 +83,12 @@ public class Scenery {
 		this.name = name;
 	}
 
-	public String getdescrib() {
+	public String getDescrib() {
 		return describ;
 	}
 
-	public void setdescrib(String describ) {
+	public void setDescrib(String describ) {
 		this.describ = describ;
-	}
-
-	public String getRoleId() {
-		return roleId;
-	}
-
-	public void setRoleId(String roleId) {
-		this.roleId = roleId;
 	}
 
 	public String getPicture() {
@@ -102,27 +99,26 @@ public class Scenery {
 		this.picture = picture;
 	}
 
-	public String gettacketId() {
+	public int getTacketId() {
 		return tacketId;
 	}
 
-	public void settacketId(String tacketId) {
+	public void setTacketId(int tacketId) {
 		this.tacketId = tacketId;
 	}
 
-	public int gettacketMoney() {
+	public int getTacketMoney() {
 		return tacketMoney;
 	}
 
-	public void settacketMoney(int tacketMoney) {
+	public void setTacketMoney(int tacketMoney) {
 		this.tacketMoney = tacketMoney;
 	}
 
 	@Override
 	public String toString() {
 		return "Scenery [sceneryId=" + sceneryId + ", local=" + local + ", name=" + name + ", describ=" + describ
-				+ ", roleId=" + roleId + ", picture=" + picture + ", tacketId=" + tacketId + ", tacketMoney="
-				+ tacketMoney + "]";
+				+ ", picture=" + picture + ", tacketId=" + tacketId + ", tacketMoney=" + tacketMoney + "]";
 	}
 
 }
