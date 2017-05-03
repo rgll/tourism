@@ -18087,3 +18087,1578 @@ Stacktrace:
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_102]
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.6.jar:8.5.6]
 	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_102]
+2017-05-03 15:37:03 [http-nio-8080-exec-4] ERROR [jsp]:181 - Servlet.service() for servlet jsp threw exception
+org.apache.el.parser.ParseException: Encountered " <FLOATING_POINT_LITERAL> ".0 "" at line 1, column 19.
+Was expecting one of:
+    "}" ...
+    "." ...
+    "(" ...
+    "[" ...
+    ";" ...
+    ">" ...
+    "gt" ...
+    "<" ...
+    "lt" ...
+    ">=" ...
+    "ge" ...
+    "<=" ...
+    "le" ...
+    "==" ...
+    "eq" ...
+    "!=" ...
+    "ne" ...
+    "&&" ...
+    "and" ...
+    "||" ...
+    "or" ...
+    "*" ...
+    "+" ...
+    "-" ...
+    "/" ...
+    "div" ...
+    "%" ...
+    "mod" ...
+    "+=" ...
+    
+	at org.apache.el.parser.ELParser.generateParseException(ELParser.java:3090) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at org.apache.el.parser.ELParser.jj_consume_token(ELParser.java:2963) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at org.apache.el.parser.ELParser.DynamicExpression(ELParser.java:148) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at org.apache.el.parser.ELParser.CompositeExpression(ELParser.java:44) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at org.apache.el.lang.ExpressionBuilder.createNodeInternal(ExpressionBuilder.java:118) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at org.apache.el.lang.ExpressionBuilder.build(ExpressionBuilder.java:178) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at org.apache.el.lang.ExpressionBuilder.createValueExpression(ExpressionBuilder.java:242) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at org.apache.el.ExpressionFactoryImpl.createValueExpression(ExpressionFactoryImpl.java:67) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(PageContextImpl.java:943) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jsp.WEB_002dINF.front.scenic_jsp._jspService(scenic_jsp.java:156) ~[?:?]
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:443) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:726) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:469) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:394) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:311) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:168) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1257) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:784) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:802) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1410) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_102]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_102]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_102]
+2017-05-03 15:37:03 [http-nio-8080-exec-4] ERROR [dispatcherServlet]:181 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [An exception occurred processing JSP page /WEB-INF/front/scenic.jsp at line 32
+
+29: 		<div class="bot1">
+30: 				<p>赵州桥成人票</p>
+31: 				<p>请在当日15点前到互联网窗口取票</p>
+32: 				<p>&yen${data.tacketMoney.0}</p>
+33: 				<p>预订</p>
+34: 		</div>
+35: 		<div class="bot1">
+
+
+Stacktrace:] with root cause
+org.apache.el.parser.ParseException: Encountered " <FLOATING_POINT_LITERAL> ".0 "" at line 1, column 19.
+Was expecting one of:
+    "}" ...
+    "." ...
+    "(" ...
+    "[" ...
+    ";" ...
+    ">" ...
+    "gt" ...
+    "<" ...
+    "lt" ...
+    ">=" ...
+    "ge" ...
+    "<=" ...
+    "le" ...
+    "==" ...
+    "eq" ...
+    "!=" ...
+    "ne" ...
+    "&&" ...
+    "and" ...
+    "||" ...
+    "or" ...
+    "*" ...
+    "+" ...
+    "-" ...
+    "/" ...
+    "div" ...
+    "%" ...
+    "mod" ...
+    "+=" ...
+    
+	at org.apache.el.parser.ELParser.generateParseException(ELParser.java:3090) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at org.apache.el.parser.ELParser.jj_consume_token(ELParser.java:2963) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at org.apache.el.parser.ELParser.DynamicExpression(ELParser.java:148) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at org.apache.el.parser.ELParser.CompositeExpression(ELParser.java:44) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at org.apache.el.lang.ExpressionBuilder.createNodeInternal(ExpressionBuilder.java:118) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at org.apache.el.lang.ExpressionBuilder.build(ExpressionBuilder.java:178) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at org.apache.el.lang.ExpressionBuilder.createValueExpression(ExpressionBuilder.java:242) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at org.apache.el.ExpressionFactoryImpl.createValueExpression(ExpressionFactoryImpl.java:67) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(PageContextImpl.java:943) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jsp.WEB_002dINF.front.scenic_jsp._jspService(scenic_jsp.java:156) ~[?:?]
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:443) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:726) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:469) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:394) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:311) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:168) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1257) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:784) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:802) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1410) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_102]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_102]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_102]
+2017-05-03 15:56:21 [main] INFO  Application:48 - Starting Application on PC-20160708UCGF with PID 8188 (D:\Java8\git\tourism\tourism\target\classes started by Administrator in D:\Java8\git\tourism\tourism)
+2017-05-03 15:56:21 [main] INFO  Application:665 - The following profiles are active: dev
+2017-05-03 15:56:21 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22ef9844: startup date [Wed May 03 15:56:21 CST 2017]; root of context hierarchy
+2017-05-03 15:56:23 [background-preinit] INFO  Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-05-03 15:56:26 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-03 15:56:26 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-03 15:56:26 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.StrategyDao.
+2017-05-03 15:56:26 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.ScenicDao.
+2017-05-03 15:56:26 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.UserDao.
+2017-05-03 15:56:27 [main] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$82db12f7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-03 15:56:30 [main] INFO  TomcatEmbeddedServletContainer:87 - Tomcat initialized with port(s): 8080 (http)
+2017-05-03 15:56:30 [main] INFO  StandardService:179 - Starting service Tomcat
+2017-05-03 15:56:30 [main] INFO  StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-05-03 15:56:31 [localhost-startStop-1] INFO  TldScanner:179 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-05-03 15:56:31 [localhost-startStop-1] INFO  [/]:179 - Initializing Spring embedded WebApplicationContext
+2017-05-03 15:56:31 [localhost-startStop-1] INFO  ContextLoader:276 - Root WebApplicationContext: initialization completed in 10144 ms
+2017-05-03 15:56:32 [localhost-startStop-1] INFO  ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-03 15:56:32 [localhost-startStop-1] INFO  FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-03 15:56:35 [main] INFO  LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-05-03 15:56:35 [main] INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-05-03 15:56:35 [main] INFO  Version:37 - HHH000412: Hibernate Core {5.0.11.Final}
+2017-05-03 15:56:35 [main] INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-05-03 15:56:35 [main] INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-05-03 15:56:35 [main] INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-03 15:56:36 [main] INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-05-03 15:56:38 [main] INFO  SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-05-03 15:56:38 [main] INFO  LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-05-03 15:56:40 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/scenic/inter]}" onto public java.lang.String com.hsxy.tourism.web.controller.ScenicController.interScenic(java.lang.String,org.springframework.ui.Model)
+2017-05-03 15:56:40 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/scenic/ajax/select]}" onto public com.hsxy.tourism.bean.Scenery com.hsxy.tourism.web.controller.ScenicController.selectScenic(java.lang.String)
+2017-05-03 15:56:40 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/a]}" onto public void com.hsxy.tourism.web.JedisController.Test()
+2017-05-03 15:56:40 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/json]}" onto public com.alibaba.fastjson.JSONObject com.hsxy.tourism.web.WelcomeController.welcome1()
+2017-05-03 15:56:40 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome2()
+2017-05-03 15:56:40 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter2]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome3()
+2017-05-03 15:56:40 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/back/main]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome4()
+2017-05-03 15:56:40 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-03 15:56:40 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-03 15:56:40 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2017-05-03 15:56:41 [main] INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22ef9844: startup date [Wed May 03 15:56:21 CST 2017]; root of context hierarchy
+2017-05-03 15:56:42 [main] INFO  AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-05-03 15:56:42 [main] INFO  Http11NioProtocol:179 - Initializing ProtocolHandler ["http-nio-8080"]
+2017-05-03 15:56:42 [main] INFO  Http11NioProtocol:179 - Starting ProtocolHandler [http-nio-8080]
+2017-05-03 15:56:43 [main] INFO  NioSelectorPool:179 - Using a shared selector for servlet write/read
+2017-05-03 15:56:43 [main] INFO  TomcatEmbeddedServletContainer:185 - Tomcat started on port(s): 8080 (http)
+2017-05-03 15:56:43 [main] INFO  Application:57 - Started Application in 23.428 seconds (JVM running for 34.496)
+2017-05-03 15:57:09 [http-nio-8080-exec-6] INFO  [/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-05-03 15:57:09 [http-nio-8080-exec-6] INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-05-03 15:57:10 [http-nio-8080-exec-6] INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 95 ms
+2017-05-03 15:57:16 [http-nio-8080-exec-2] INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-05-03 16:01:55 [main] INFO  Application:48 - Starting Application on PC-20160708UCGF with PID 8780 (D:\Java8\git\tourism\tourism\target\classes started by Administrator in D:\Java8\git\tourism\tourism)
+2017-05-03 16:01:55 [main] INFO  Application:665 - The following profiles are active: dev
+2017-05-03 16:01:55 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22ef9844: startup date [Wed May 03 16:01:55 CST 2017]; root of context hierarchy
+2017-05-03 16:01:56 [background-preinit] INFO  Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-05-03 16:01:58 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-03 16:01:59 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-03 16:01:59 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.StrategyDao.
+2017-05-03 16:01:59 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.ScenicDao.
+2017-05-03 16:01:59 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.UserDao.
+2017-05-03 16:02:00 [main] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$82db12f7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-03 16:02:01 [main] INFO  TomcatEmbeddedServletContainer:87 - Tomcat initialized with port(s): 8080 (http)
+2017-05-03 16:02:01 [main] INFO  StandardService:179 - Starting service Tomcat
+2017-05-03 16:02:01 [main] INFO  StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-05-03 16:02:01 [localhost-startStop-1] INFO  TldScanner:179 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-05-03 16:02:01 [localhost-startStop-1] INFO  [/]:179 - Initializing Spring embedded WebApplicationContext
+2017-05-03 16:02:01 [localhost-startStop-1] INFO  ContextLoader:276 - Root WebApplicationContext: initialization completed in 5592 ms
+2017-05-03 16:02:01 [localhost-startStop-1] INFO  ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-03 16:02:01 [localhost-startStop-1] INFO  FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-03 16:02:02 [main] INFO  LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-05-03 16:02:02 [main] INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-05-03 16:02:02 [main] INFO  Version:37 - HHH000412: Hibernate Core {5.0.11.Final}
+2017-05-03 16:02:02 [main] INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-05-03 16:02:02 [main] INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-05-03 16:02:02 [main] INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-03 16:02:03 [main] INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-05-03 16:02:03 [main] INFO  SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-05-03 16:02:03 [main] INFO  LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-05-03 16:02:04 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/scenic/inter]}" onto public java.lang.String com.hsxy.tourism.web.controller.ScenicController.interScenic(java.lang.String,org.springframework.ui.Model)
+2017-05-03 16:02:04 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/scenic/ajax/select]}" onto public com.hsxy.tourism.bean.Scenery com.hsxy.tourism.web.controller.ScenicController.selectScenic(java.lang.String)
+2017-05-03 16:02:04 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/a]}" onto public void com.hsxy.tourism.web.JedisController.Test()
+2017-05-03 16:02:04 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/json]}" onto public com.alibaba.fastjson.JSONObject com.hsxy.tourism.web.WelcomeController.welcome1()
+2017-05-03 16:02:04 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome2()
+2017-05-03 16:02:04 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter2]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome3()
+2017-05-03 16:02:04 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/back/main]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome4()
+2017-05-03 16:02:04 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-03 16:02:04 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-03 16:02:04 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2017-05-03 16:02:04 [main] INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22ef9844: startup date [Wed May 03 16:01:55 CST 2017]; root of context hierarchy
+2017-05-03 16:02:05 [main] INFO  AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-05-03 16:02:05 [main] INFO  Http11NioProtocol:179 - Initializing ProtocolHandler ["http-nio-8080"]
+2017-05-03 16:02:05 [main] INFO  Http11NioProtocol:179 - Starting ProtocolHandler [http-nio-8080]
+2017-05-03 16:02:05 [main] INFO  NioSelectorPool:179 - Using a shared selector for servlet write/read
+2017-05-03 16:02:05 [main] INFO  TomcatEmbeddedServletContainer:185 - Tomcat started on port(s): 8080 (http)
+2017-05-03 16:02:05 [main] INFO  Application:57 - Started Application in 11.232 seconds (JVM running for 14.147)
+2017-05-03 16:02:19 [http-nio-8080-exec-1] INFO  [/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-05-03 16:02:19 [http-nio-8080-exec-1] INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-05-03 16:02:19 [http-nio-8080-exec-1] INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 97 ms
+2017-05-03 16:02:19 [http-nio-8080-exec-1] INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-05-03 16:12:23 [main] INFO  Application:48 - Starting Application on PC-20160708UCGF with PID 9788 (D:\Java8\git\tourism\tourism\target\classes started by Administrator in D:\Java8\git\tourism\tourism)
+2017-05-03 16:12:23 [main] INFO  Application:665 - The following profiles are active: dev
+2017-05-03 16:12:24 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5827af16: startup date [Wed May 03 16:12:23 CST 2017]; root of context hierarchy
+2017-05-03 16:12:24 [background-preinit] INFO  Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-05-03 16:12:26 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-03 16:12:26 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-03 16:12:27 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.StrategyDao.
+2017-05-03 16:12:27 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.ScenicDao.
+2017-05-03 16:12:27 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.UserDao.
+2017-05-03 16:12:27 [main] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ceae5ff3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-03 16:12:29 [main] INFO  TomcatEmbeddedServletContainer:87 - Tomcat initialized with port(s): 8080 (http)
+2017-05-03 16:12:29 [main] INFO  StandardService:179 - Starting service Tomcat
+2017-05-03 16:12:29 [main] INFO  StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-05-03 16:12:29 [localhost-startStop-1] INFO  TldScanner:179 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-05-03 16:12:29 [localhost-startStop-1] INFO  [/]:179 - Initializing Spring embedded WebApplicationContext
+2017-05-03 16:12:29 [localhost-startStop-1] INFO  ContextLoader:276 - Root WebApplicationContext: initialization completed in 5681 ms
+2017-05-03 16:12:29 [localhost-startStop-1] INFO  ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-03 16:12:29 [localhost-startStop-1] INFO  FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-03 16:12:31 [main] INFO  LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-05-03 16:12:31 [main] INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-05-03 16:12:31 [main] INFO  Version:37 - HHH000412: Hibernate Core {5.0.11.Final}
+2017-05-03 16:12:31 [main] INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-05-03 16:12:31 [main] INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-05-03 16:12:31 [main] INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-03 16:12:31 [main] INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-05-03 16:12:32 [main] INFO  SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-05-03 16:12:32 [main] INFO  LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-05-03 16:12:33 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/scenic/inter]}" onto public java.lang.String com.hsxy.tourism.web.controller.ScenicController.interScenic(java.lang.String,org.springframework.ui.Model)
+2017-05-03 16:12:33 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/scenic/ajax/select]}" onto public com.hsxy.tourism.bean.Scenery com.hsxy.tourism.web.controller.ScenicController.selectScenic(java.lang.String)
+2017-05-03 16:12:33 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/a]}" onto public void com.hsxy.tourism.web.JedisController.Test()
+2017-05-03 16:12:33 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/json]}" onto public com.alibaba.fastjson.JSONObject com.hsxy.tourism.web.WelcomeController.welcome1()
+2017-05-03 16:12:33 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome2()
+2017-05-03 16:12:33 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter2]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome3()
+2017-05-03 16:12:33 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/back/main]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome4()
+2017-05-03 16:12:33 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-03 16:12:33 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-03 16:12:33 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2017-05-03 16:12:34 [main] INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5827af16: startup date [Wed May 03 16:12:23 CST 2017]; root of context hierarchy
+2017-05-03 16:12:35 [main] INFO  AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-05-03 16:12:35 [main] INFO  Http11NioProtocol:179 - Initializing ProtocolHandler ["http-nio-8080"]
+2017-05-03 16:12:35 [main] INFO  Http11NioProtocol:179 - Starting ProtocolHandler [http-nio-8080]
+2017-05-03 16:12:35 [main] ERROR Http11NioProtocol:181 - Failed to start end point associated with ProtocolHandler [http-nio-8080]
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:1.8.0_102]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[?:1.8.0_102]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[?:1.8.0_102]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[?:1.8.0_102]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[?:1.8.0_102]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:228) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:590) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:969) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:233) [spring-boot-1.4.2.RELEASE.jar:1.4.2.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:178) [spring-boot-1.4.2.RELEASE.jar:1.4.2.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.4.2.RELEASE.jar:1.4.2.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.4.2.RELEASE.jar:1.4.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545) [spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.4.2.RELEASE.jar:1.4.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) [spring-boot-1.4.2.RELEASE.jar:1.4.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371) [spring-boot-1.4.2.RELEASE.jar:1.4.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-1.4.2.RELEASE.jar:1.4.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186) [spring-boot-1.4.2.RELEASE.jar:1.4.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175) [spring-boot-1.4.2.RELEASE.jar:1.4.2.RELEASE]
+	at com.hsxy.tourism.Application.main(Application.java:23) [classes/:?]
+2017-05-03 16:12:35 [main] ERROR StandardService:181 - Failed to start connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:233) [spring-boot-1.4.2.RELEASE.jar:1.4.2.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:178) [spring-boot-1.4.2.RELEASE.jar:1.4.2.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.4.2.RELEASE.jar:1.4.2.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.4.2.RELEASE.jar:1.4.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545) [spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.4.2.RELEASE.jar:1.4.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) [spring-boot-1.4.2.RELEASE.jar:1.4.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371) [spring-boot-1.4.2.RELEASE.jar:1.4.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-1.4.2.RELEASE.jar:1.4.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186) [spring-boot-1.4.2.RELEASE.jar:1.4.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175) [spring-boot-1.4.2.RELEASE.jar:1.4.2.RELEASE]
+	at com.hsxy.tourism.Application.main(Application.java:23) [classes/:?]
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:976) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	... 13 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:1.8.0_102]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[?:1.8.0_102]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[?:1.8.0_102]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[?:1.8.0_102]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[?:1.8.0_102]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:228) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:590) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:969) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	... 13 more
+2017-05-03 16:12:35 [main] INFO  Http11NioProtocol:179 - Pausing ProtocolHandler ["http-nio-8080"]
+2017-05-03 16:12:35 [main] INFO  StandardService:179 - Stopping service Tomcat
+2017-05-03 16:12:35 [main] INFO  LifecycleBase:179 - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2017-05-03 16:12:35 [main] INFO  Http11NioProtocol:179 - Stopping ProtocolHandler ["http-nio-8080"]
+2017-05-03 16:12:35 [main] INFO  Http11NioProtocol:179 - Destroying ProtocolHandler ["http-nio-8080"]
+2017-05-03 16:12:35 [main] INFO  AutoConfigurationReportLoggingInitializer:101 - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-05-03 16:12:35 [main] ERROR LoggingFailureAnalysisReporter:42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2017-05-03 16:12:35 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext:987 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5827af16: startup date [Wed May 03 16:12:23 CST 2017]; root of context hierarchy
+2017-05-03 16:12:35 [main] INFO  AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2017-05-03 16:12:35 [main] INFO  LocalContainerEntityManagerFactoryBean:551 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-05-03 16:13:19 [main] INFO  Application:48 - Starting Application on PC-20160708UCGF with PID 9488 (D:\Java8\git\tourism\tourism\target\classes started by Administrator in D:\Java8\git\tourism\tourism)
+2017-05-03 16:13:19 [main] INFO  Application:665 - The following profiles are active: dev
+2017-05-03 16:13:19 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22ef9844: startup date [Wed May 03 16:13:19 CST 2017]; root of context hierarchy
+2017-05-03 16:13:19 [background-preinit] INFO  Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-05-03 16:13:21 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-03 16:13:22 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-03 16:13:22 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.StrategyDao.
+2017-05-03 16:13:22 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.ScenicDao.
+2017-05-03 16:13:22 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.UserDao.
+2017-05-03 16:13:22 [main] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$82db12f7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-03 16:13:24 [main] INFO  TomcatEmbeddedServletContainer:87 - Tomcat initialized with port(s): 8080 (http)
+2017-05-03 16:13:24 [main] INFO  StandardService:179 - Starting service Tomcat
+2017-05-03 16:13:24 [main] INFO  StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-05-03 16:13:24 [localhost-startStop-1] INFO  TldScanner:179 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-05-03 16:13:24 [localhost-startStop-1] INFO  [/]:179 - Initializing Spring embedded WebApplicationContext
+2017-05-03 16:13:24 [localhost-startStop-1] INFO  ContextLoader:276 - Root WebApplicationContext: initialization completed in 4945 ms
+2017-05-03 16:13:24 [localhost-startStop-1] INFO  ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-03 16:13:24 [localhost-startStop-1] INFO  FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-03 16:13:25 [main] INFO  LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-05-03 16:13:25 [main] INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-05-03 16:13:25 [main] INFO  Version:37 - HHH000412: Hibernate Core {5.0.11.Final}
+2017-05-03 16:13:25 [main] INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-05-03 16:13:25 [main] INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-05-03 16:13:25 [main] INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-03 16:13:25 [main] INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-05-03 16:13:26 [main] INFO  SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-05-03 16:13:27 [main] INFO  LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-05-03 16:13:27 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/scenic/inter]}" onto public java.lang.String com.hsxy.tourism.web.controller.ScenicController.interScenic(java.lang.String,org.springframework.ui.Model)
+2017-05-03 16:13:27 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/scenic/ajax/select]}" onto public com.hsxy.tourism.bean.Scenery com.hsxy.tourism.web.controller.ScenicController.selectScenic(java.lang.String)
+2017-05-03 16:13:27 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/a]}" onto public void com.hsxy.tourism.web.JedisController.Test()
+2017-05-03 16:13:27 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/json]}" onto public com.alibaba.fastjson.JSONObject com.hsxy.tourism.web.WelcomeController.welcome1()
+2017-05-03 16:13:27 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome2()
+2017-05-03 16:13:27 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter2]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome3()
+2017-05-03 16:13:27 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/back/main]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome4()
+2017-05-03 16:13:27 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-03 16:13:27 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-03 16:13:27 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2017-05-03 16:13:27 [main] INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22ef9844: startup date [Wed May 03 16:13:19 CST 2017]; root of context hierarchy
+2017-05-03 16:13:28 [main] INFO  AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-05-03 16:13:28 [main] INFO  Http11NioProtocol:179 - Initializing ProtocolHandler ["http-nio-8080"]
+2017-05-03 16:13:28 [main] INFO  Http11NioProtocol:179 - Starting ProtocolHandler [http-nio-8080]
+2017-05-03 16:13:28 [main] INFO  NioSelectorPool:179 - Using a shared selector for servlet write/read
+2017-05-03 16:13:28 [main] INFO  TomcatEmbeddedServletContainer:185 - Tomcat started on port(s): 8080 (http)
+2017-05-03 16:13:28 [main] INFO  Application:57 - Started Application in 10.435 seconds (JVM running for 12.483)
+2017-05-03 16:13:41 [http-nio-8080-exec-1] INFO  [/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-05-03 16:13:41 [http-nio-8080-exec-1] INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-05-03 16:13:41 [http-nio-8080-exec-1] INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 103 ms
+2017-05-03 16:13:42 [http-nio-8080-exec-1] INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-05-03 16:17:02 [main] INFO  Application:48 - Starting Application on PC-20160708UCGF with PID 8024 (D:\Java8\git\tourism\tourism\target\classes started by Administrator in D:\Java8\git\tourism\tourism)
+2017-05-03 16:17:02 [main] INFO  Application:665 - The following profiles are active: dev
+2017-05-03 16:17:02 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5827af16: startup date [Wed May 03 16:17:02 CST 2017]; root of context hierarchy
+2017-05-03 16:17:03 [background-preinit] INFO  Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-05-03 16:17:05 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-03 16:17:05 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-03 16:17:05 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.StrategyDao.
+2017-05-03 16:17:05 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.ScenicDao.
+2017-05-03 16:17:05 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.UserDao.
+2017-05-03 16:17:06 [main] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$71e16546] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-03 16:17:07 [main] INFO  TomcatEmbeddedServletContainer:87 - Tomcat initialized with port(s): 8080 (http)
+2017-05-03 16:17:07 [main] INFO  StandardService:179 - Starting service Tomcat
+2017-05-03 16:17:07 [main] INFO  StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-05-03 16:17:08 [localhost-startStop-1] INFO  TldScanner:179 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-05-03 16:17:08 [localhost-startStop-1] INFO  [/]:179 - Initializing Spring embedded WebApplicationContext
+2017-05-03 16:17:08 [localhost-startStop-1] INFO  ContextLoader:276 - Root WebApplicationContext: initialization completed in 5565 ms
+2017-05-03 16:17:08 [localhost-startStop-1] INFO  ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-03 16:17:08 [localhost-startStop-1] INFO  FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-03 16:17:09 [main] INFO  LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-05-03 16:17:09 [main] INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-05-03 16:17:09 [main] INFO  Version:37 - HHH000412: Hibernate Core {5.0.11.Final}
+2017-05-03 16:17:09 [main] INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-05-03 16:17:09 [main] INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-05-03 16:17:09 [main] INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-03 16:17:10 [main] INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-05-03 16:17:10 [main] INFO  SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-05-03 16:17:11 [main] INFO  LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-05-03 16:17:12 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/scenic/inter]}" onto public java.lang.String com.hsxy.tourism.web.controller.ScenicController.interScenic(java.lang.String,org.springframework.ui.Model)
+2017-05-03 16:17:12 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/scenic/ajax/select]}" onto public com.hsxy.tourism.bean.Scenery com.hsxy.tourism.web.controller.ScenicController.selectScenic(java.lang.String)
+2017-05-03 16:17:12 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/a]}" onto public void com.hsxy.tourism.web.JedisController.Test()
+2017-05-03 16:17:12 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/json]}" onto public com.alibaba.fastjson.JSONObject com.hsxy.tourism.web.WelcomeController.welcome1()
+2017-05-03 16:17:12 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome2()
+2017-05-03 16:17:12 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter2]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome3()
+2017-05-03 16:17:12 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/back/main]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome4()
+2017-05-03 16:17:12 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-03 16:17:12 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-03 16:17:12 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2017-05-03 16:17:12 [main] INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5827af16: startup date [Wed May 03 16:17:02 CST 2017]; root of context hierarchy
+2017-05-03 16:17:13 [main] INFO  AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-05-03 16:17:13 [main] INFO  Http11NioProtocol:179 - Initializing ProtocolHandler ["http-nio-8080"]
+2017-05-03 16:17:13 [main] INFO  Http11NioProtocol:179 - Starting ProtocolHandler [http-nio-8080]
+2017-05-03 16:17:13 [main] INFO  NioSelectorPool:179 - Using a shared selector for servlet write/read
+2017-05-03 16:17:13 [main] INFO  TomcatEmbeddedServletContainer:185 - Tomcat started on port(s): 8080 (http)
+2017-05-03 16:17:13 [main] INFO  Application:57 - Started Application in 12.232 seconds (JVM running for 15.31)
+2017-05-03 16:17:18 [http-nio-8080-exec-1] INFO  [/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-05-03 16:17:18 [http-nio-8080-exec-1] INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-05-03 16:17:18 [http-nio-8080-exec-1] INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 94 ms
+2017-05-03 16:17:18 [http-nio-8080-exec-1] INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-05-03 16:32:59 [http-nio-8080-exec-2] ERROR [jsp]:181 - Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: The absolute uri: http://java.sun.com/jsp/jstl/functions cannot be resolved in either web.xml or the jar files deployed with this application
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:55) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:293) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:80) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.TagLibraryInfoImpl.generateTldResourcePath(TagLibraryInfoImpl.java:251) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.TagLibraryInfoImpl.<init>(TagLibraryInfoImpl.java:122) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Parser.parseTaglibDirective(Parser.java:434) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Parser.parseDirective(Parser.java:492) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1448) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:145) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:244) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:105) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:201) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:349) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:333) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:600) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:368) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:726) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:469) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:394) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:311) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:168) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1257) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:784) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:802) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1410) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_102]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_102]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_102]
+2017-05-03 16:32:59 [http-nio-8080-exec-2] ERROR [dispatcherServlet]:181 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [The absolute uri: http://java.sun.com/jsp/jstl/functions cannot be resolved in either web.xml or the jar files deployed with this application] with root cause
+org.apache.jasper.JasperException: The absolute uri: http://java.sun.com/jsp/jstl/functions cannot be resolved in either web.xml or the jar files deployed with this application
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:55) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:293) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:80) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.TagLibraryInfoImpl.generateTldResourcePath(TagLibraryInfoImpl.java:251) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.TagLibraryInfoImpl.<init>(TagLibraryInfoImpl.java:122) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Parser.parseTaglibDirective(Parser.java:434) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Parser.parseDirective(Parser.java:492) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1448) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:145) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:244) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:105) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:201) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:349) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:333) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:600) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:368) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:726) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:469) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:394) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:311) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:168) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1257) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:784) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:802) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1410) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_102]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_102]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_102]
+2017-05-03 16:33:04 [http-nio-8080-exec-4] ERROR [jsp]:181 - Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: The absolute uri: http://java.sun.com/jsp/jstl/functions cannot be resolved in either web.xml or the jar files deployed with this application
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:55) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:293) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:80) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.TagLibraryInfoImpl.generateTldResourcePath(TagLibraryInfoImpl.java:251) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.TagLibraryInfoImpl.<init>(TagLibraryInfoImpl.java:122) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Parser.parseTaglibDirective(Parser.java:434) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Parser.parseDirective(Parser.java:492) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1448) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:145) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:244) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:105) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:201) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:349) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:333) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:600) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:368) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:726) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:469) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:394) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:311) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:168) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1257) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:784) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:802) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1410) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_102]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_102]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_102]
+2017-05-03 16:33:04 [http-nio-8080-exec-4] ERROR [dispatcherServlet]:181 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [The absolute uri: http://java.sun.com/jsp/jstl/functions cannot be resolved in either web.xml or the jar files deployed with this application] with root cause
+org.apache.jasper.JasperException: The absolute uri: http://java.sun.com/jsp/jstl/functions cannot be resolved in either web.xml or the jar files deployed with this application
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:55) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:293) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:80) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.TagLibraryInfoImpl.generateTldResourcePath(TagLibraryInfoImpl.java:251) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.TagLibraryInfoImpl.<init>(TagLibraryInfoImpl.java:122) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Parser.parseTaglibDirective(Parser.java:434) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Parser.parseDirective(Parser.java:492) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1448) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:145) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:244) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:105) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:201) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:349) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:333) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:600) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:368) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:726) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:469) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:394) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:311) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:168) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1257) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:784) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:802) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1410) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_102]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_102]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_102]
+2017-05-03 16:36:24 [http-nio-8080-exec-3] ERROR [jsp]:181 - Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: The absolute uri: http://java.sun.com/jsp/jstl/functions cannot be resolved in either web.xml or the jar files deployed with this application
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:55) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:293) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:80) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.TagLibraryInfoImpl.generateTldResourcePath(TagLibraryInfoImpl.java:251) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.TagLibraryInfoImpl.<init>(TagLibraryInfoImpl.java:122) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Parser.parseTaglibDirective(Parser.java:434) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Parser.parseDirective(Parser.java:492) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1448) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:145) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:244) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:105) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:201) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:349) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:333) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:600) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:368) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:726) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:469) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:394) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:311) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:168) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1257) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:784) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:802) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1410) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_102]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_102]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_102]
+2017-05-03 16:36:24 [http-nio-8080-exec-3] ERROR [dispatcherServlet]:181 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [The absolute uri: http://java.sun.com/jsp/jstl/functions cannot be resolved in either web.xml or the jar files deployed with this application] with root cause
+org.apache.jasper.JasperException: The absolute uri: http://java.sun.com/jsp/jstl/functions cannot be resolved in either web.xml or the jar files deployed with this application
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:55) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:293) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:80) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.TagLibraryInfoImpl.generateTldResourcePath(TagLibraryInfoImpl.java:251) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.TagLibraryInfoImpl.<init>(TagLibraryInfoImpl.java:122) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Parser.parseTaglibDirective(Parser.java:434) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Parser.parseDirective(Parser.java:492) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1448) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:145) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:244) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:105) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:201) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:349) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:333) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:600) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:368) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:726) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:469) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:394) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:311) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:168) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1257) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:784) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:802) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1410) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_102]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_102]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_102]
+2017-05-03 16:36:31 [http-nio-8080-exec-3] ERROR [jsp]:181 - Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: The absolute uri: http://java.sun.com/jsp/jstl/functions cannot be resolved in either web.xml or the jar files deployed with this application
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:55) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:293) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:80) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.TagLibraryInfoImpl.generateTldResourcePath(TagLibraryInfoImpl.java:251) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.TagLibraryInfoImpl.<init>(TagLibraryInfoImpl.java:122) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Parser.parseTaglibDirective(Parser.java:434) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Parser.parseDirective(Parser.java:492) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1448) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:145) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:244) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:105) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:201) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:349) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:333) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:600) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:368) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:726) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:469) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:394) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:311) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:168) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1257) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:784) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:802) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1410) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_102]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_102]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_102]
+2017-05-03 16:36:32 [http-nio-8080-exec-3] ERROR [dispatcherServlet]:181 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [The absolute uri: http://java.sun.com/jsp/jstl/functions cannot be resolved in either web.xml or the jar files deployed with this application] with root cause
+org.apache.jasper.JasperException: The absolute uri: http://java.sun.com/jsp/jstl/functions cannot be resolved in either web.xml or the jar files deployed with this application
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:55) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:293) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:80) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.TagLibraryInfoImpl.generateTldResourcePath(TagLibraryInfoImpl.java:251) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.TagLibraryInfoImpl.<init>(TagLibraryInfoImpl.java:122) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Parser.parseTaglibDirective(Parser.java:434) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Parser.parseDirective(Parser.java:492) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1448) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:145) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:244) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:105) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:201) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:349) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:333) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:600) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:368) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:726) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:469) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:394) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:311) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:168) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1257) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:784) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:802) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1410) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_102]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_102]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_102]
+2017-05-03 16:36:55 [main] INFO  Application:48 - Starting Application on PC-20160708UCGF with PID 6412 (D:\Java8\git\tourism\tourism\target\classes started by Administrator in D:\Java8\git\tourism\tourism)
+2017-05-03 16:36:55 [main] INFO  Application:665 - The following profiles are active: dev
+2017-05-03 16:36:55 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@239b0f9d: startup date [Wed May 03 16:36:55 CST 2017]; root of context hierarchy
+2017-05-03 16:36:56 [background-preinit] INFO  Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-05-03 16:36:58 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-03 16:36:58 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-03 16:36:58 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.StrategyDao.
+2017-05-03 16:36:58 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.ScenicDao.
+2017-05-03 16:36:58 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.UserDao.
+2017-05-03 16:36:59 [main] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cf16ee3a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-03 16:37:01 [main] INFO  TomcatEmbeddedServletContainer:87 - Tomcat initialized with port(s): 8080 (http)
+2017-05-03 16:37:01 [main] INFO  StandardService:179 - Starting service Tomcat
+2017-05-03 16:37:01 [main] INFO  StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-05-03 16:37:02 [localhost-startStop-1] INFO  TldScanner:179 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-05-03 16:37:02 [localhost-startStop-1] INFO  [/]:179 - Initializing Spring embedded WebApplicationContext
+2017-05-03 16:37:02 [localhost-startStop-1] INFO  ContextLoader:276 - Root WebApplicationContext: initialization completed in 6993 ms
+2017-05-03 16:37:03 [localhost-startStop-1] INFO  ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-03 16:37:03 [localhost-startStop-1] INFO  FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-03 16:37:04 [main] INFO  LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-05-03 16:37:04 [main] INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-05-03 16:37:04 [main] INFO  Version:37 - HHH000412: Hibernate Core {5.0.11.Final}
+2017-05-03 16:37:04 [main] INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-05-03 16:37:04 [main] INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-05-03 16:37:04 [main] INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-03 16:37:05 [main] INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-05-03 16:37:06 [main] INFO  SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-05-03 16:37:06 [main] INFO  LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-05-03 16:37:07 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/scenic/inter]}" onto public java.lang.String com.hsxy.tourism.web.controller.ScenicController.interScenic(java.lang.String,org.springframework.ui.Model)
+2017-05-03 16:37:07 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/scenic/ajax/select]}" onto public com.hsxy.tourism.bean.Scenery com.hsxy.tourism.web.controller.ScenicController.selectScenic(java.lang.String)
+2017-05-03 16:37:07 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/a]}" onto public void com.hsxy.tourism.web.JedisController.Test()
+2017-05-03 16:37:07 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/json]}" onto public com.alibaba.fastjson.JSONObject com.hsxy.tourism.web.WelcomeController.welcome1()
+2017-05-03 16:37:07 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome2()
+2017-05-03 16:37:07 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter2]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome3()
+2017-05-03 16:37:07 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/back/main]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome4()
+2017-05-03 16:37:07 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-03 16:37:07 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-03 16:37:07 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2017-05-03 16:37:08 [main] INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@239b0f9d: startup date [Wed May 03 16:36:55 CST 2017]; root of context hierarchy
+2017-05-03 16:37:09 [main] INFO  AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-05-03 16:37:09 [main] INFO  Http11NioProtocol:179 - Initializing ProtocolHandler ["http-nio-8080"]
+2017-05-03 16:37:09 [main] INFO  Http11NioProtocol:179 - Starting ProtocolHandler [http-nio-8080]
+2017-05-03 16:37:09 [main] INFO  NioSelectorPool:179 - Using a shared selector for servlet write/read
+2017-05-03 16:37:10 [main] INFO  TomcatEmbeddedServletContainer:185 - Tomcat started on port(s): 8080 (http)
+2017-05-03 16:37:10 [main] INFO  Application:57 - Started Application in 15.589 seconds (JVM running for 18.662)
+2017-05-03 16:37:13 [http-nio-8080-exec-1] INFO  [/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-05-03 16:37:13 [http-nio-8080-exec-1] INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-05-03 16:37:13 [http-nio-8080-exec-1] INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 117 ms
+2017-05-03 16:37:19 [http-nio-8080-exec-4] INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-05-03 16:39:47 [http-nio-8080-exec-1] ERROR [jsp]:181 - Servlet.service() for servlet jsp threw exception
+java.lang.NumberFormatException: For input string: "title"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_102]
+	at java.lang.Integer.parseInt(Integer.java:580) ~[?:1.8.0_102]
+	at java.lang.Integer.parseInt(Integer.java:615) ~[?:1.8.0_102]
+	at javax.el.ListELResolver.coerce(ListELResolver.java:150) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at javax.el.ListELResolver.getValue(ListELResolver.java:67) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at org.apache.jasper.el.JasperELResolver.getValue(JasperELResolver.java:110) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.el.parser.AstValue.getValue(AstValue.java:169) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:184) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(PageContextImpl.java:944) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jsp.WEB_002dINF.front.scenic_jsp._jspService(scenic_jsp.java:214) ~[?:?]
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:443) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:726) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:469) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:394) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:311) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:168) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1257) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:784) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:802) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1410) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_102]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_102]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_102]
+2017-05-03 16:39:47 [http-nio-8080-exec-1] ERROR [dispatcherServlet]:181 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [An exception occurred processing JSP page /WEB-INF/front/scenic.jsp at line 72
+
+69: 				<c:when test="${fn:length(data2)<2}">
+70: 					<div class="fo-left"><img src="${ctxPath}/images/thumbnails.jpg" alt=""></div>
+71: 					<div class="fo-right">
+72: 								<p>${data2.title}</p>
+73: 								<p>${data2.time}</p>
+74: 								<p>${data2.desribe}</p>
+75: 					</div>
+
+
+Stacktrace:] with root cause
+java.lang.NumberFormatException: For input string: "title"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_102]
+	at java.lang.Integer.parseInt(Integer.java:580) ~[?:1.8.0_102]
+	at java.lang.Integer.parseInt(Integer.java:615) ~[?:1.8.0_102]
+	at javax.el.ListELResolver.coerce(ListELResolver.java:150) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at javax.el.ListELResolver.getValue(ListELResolver.java:67) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at org.apache.jasper.el.JasperELResolver.getValue(JasperELResolver.java:110) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.el.parser.AstValue.getValue(AstValue.java:169) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:184) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(PageContextImpl.java:944) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jsp.WEB_002dINF.front.scenic_jsp._jspService(scenic_jsp.java:214) ~[?:?]
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:443) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:726) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:469) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:394) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:311) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:168) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1257) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:784) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:802) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1410) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_102]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_102]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_102]
+2017-05-03 16:41:10 [http-nio-8080-exec-2] ERROR [jsp]:181 - Servlet.service() for servlet jsp threw exception
+java.lang.NumberFormatException: For input string: "length"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_102]
+	at java.lang.Integer.parseInt(Integer.java:580) ~[?:1.8.0_102]
+	at java.lang.Integer.parseInt(Integer.java:615) ~[?:1.8.0_102]
+	at javax.el.ListELResolver.coerce(ListELResolver.java:150) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at javax.el.ListELResolver.getValue(ListELResolver.java:67) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at org.apache.jasper.el.JasperELResolver.getValue(JasperELResolver.java:110) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.el.parser.AstValue.getValue(AstValue.java:169) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at org.apache.el.parser.AstFunction.getValue(AstFunction.java:185) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at org.apache.el.parser.AstLessThan.getValue(AstLessThan.java:37) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:184) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(PageContextImpl.java:944) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jsp.WEB_002dINF.front.scenic_jsp._jspService(scenic_jsp.java:207) ~[?:?]
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:443) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:726) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:469) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:394) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:311) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:168) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1257) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:784) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:802) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1410) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_102]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_102]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_102]
+2017-05-03 16:41:10 [http-nio-8080-exec-2] ERROR [dispatcherServlet]:181 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [An exception occurred processing JSP page /WEB-INF/front/scenic.jsp at line 69
+
+66: 		<div class="footer">游记</div>
+67: 		<div class="footer1">
+68: 			<c:choose>
+69: 				<c:when test="${fn:length(data2.length)<2}">
+70: 					<div class="fo-left"><img src="${ctxPath}/images/thumbnails.jpg" alt=""></div>
+71: 					<div class="fo-right">
+72: 								<p>${data2[0].title}</p>
+
+
+Stacktrace:] with root cause
+java.lang.NumberFormatException: For input string: "length"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_102]
+	at java.lang.Integer.parseInt(Integer.java:580) ~[?:1.8.0_102]
+	at java.lang.Integer.parseInt(Integer.java:615) ~[?:1.8.0_102]
+	at javax.el.ListELResolver.coerce(ListELResolver.java:150) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at javax.el.ListELResolver.getValue(ListELResolver.java:67) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at org.apache.jasper.el.JasperELResolver.getValue(JasperELResolver.java:110) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.el.parser.AstValue.getValue(AstValue.java:169) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at org.apache.el.parser.AstFunction.getValue(AstFunction.java:185) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at org.apache.el.parser.AstLessThan.getValue(AstLessThan.java:37) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:184) ~[tomcat-embed-el-8.5.6.jar:8.5.6]
+	at org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate(PageContextImpl.java:944) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jsp.WEB_002dINF.front.scenic_jsp._jspService(scenic_jsp.java:207) ~[?:?]
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:443) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329) ~[tomcat-embed-jasper-8.5.6.jar:8.5.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:726) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:469) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:394) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:311) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:168) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1257) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:784) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:802) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1410) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_102]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_102]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.6.jar:8.5.6]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_102]
+2017-05-03 16:46:26 [main] INFO  Application:48 - Starting Application on PC-20160708UCGF with PID 6384 (D:\Java8\git\tourism\tourism\target\classes started by Administrator in D:\Java8\git\tourism\tourism)
+2017-05-03 16:46:26 [main] INFO  Application:665 - The following profiles are active: dev
+2017-05-03 16:46:26 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a530d0a: startup date [Wed May 03 16:46:26 CST 2017]; root of context hierarchy
+2017-05-03 16:46:26 [background-preinit] INFO  Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-05-03 16:46:29 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-03 16:46:29 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-03 16:46:29 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.StrategyDao.
+2017-05-03 16:46:29 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.ScenicDao.
+2017-05-03 16:46:29 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.UserDao.
+2017-05-03 16:46:29 [main] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e403c9f0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-03 16:46:30 [main] INFO  TomcatEmbeddedServletContainer:87 - Tomcat initialized with port(s): 8080 (http)
+2017-05-03 16:46:31 [main] INFO  StandardService:179 - Starting service Tomcat
+2017-05-03 16:46:31 [main] INFO  StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-05-03 16:46:31 [localhost-startStop-1] INFO  TldScanner:179 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-05-03 16:46:31 [localhost-startStop-1] INFO  [/]:179 - Initializing Spring embedded WebApplicationContext
+2017-05-03 16:46:31 [localhost-startStop-1] INFO  ContextLoader:276 - Root WebApplicationContext: initialization completed in 4850 ms
+2017-05-03 16:46:31 [localhost-startStop-1] INFO  ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-03 16:46:31 [localhost-startStop-1] INFO  FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-03 16:46:32 [main] INFO  LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-05-03 16:46:32 [main] INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-05-03 16:46:32 [main] INFO  Version:37 - HHH000412: Hibernate Core {5.0.11.Final}
+2017-05-03 16:46:32 [main] INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-05-03 16:46:32 [main] INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-05-03 16:46:32 [main] INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-03 16:46:32 [main] INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-05-03 16:46:33 [main] INFO  SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-05-03 16:46:34 [main] INFO  LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-05-03 16:46:34 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/scenic/inter]}" onto public java.lang.String com.hsxy.tourism.web.controller.ScenicController.interScenic(java.lang.String,org.springframework.ui.Model)
+2017-05-03 16:46:34 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/scenic/ajax/select]}" onto public com.hsxy.tourism.bean.Scenery com.hsxy.tourism.web.controller.ScenicController.selectScenic(java.lang.String)
+2017-05-03 16:46:34 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/a]}" onto public void com.hsxy.tourism.web.JedisController.Test()
+2017-05-03 16:46:34 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/json]}" onto public com.alibaba.fastjson.JSONObject com.hsxy.tourism.web.WelcomeController.welcome1()
+2017-05-03 16:46:34 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome2()
+2017-05-03 16:46:34 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter2]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome3()
+2017-05-03 16:46:34 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/back/main]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome4()
+2017-05-03 16:46:34 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-03 16:46:34 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-03 16:46:34 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2017-05-03 16:46:34 [main] INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a530d0a: startup date [Wed May 03 16:46:26 CST 2017]; root of context hierarchy
+2017-05-03 16:46:35 [main] INFO  AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-05-03 16:46:35 [main] INFO  Http11NioProtocol:179 - Initializing ProtocolHandler ["http-nio-8080"]
+2017-05-03 16:46:35 [main] INFO  Http11NioProtocol:179 - Starting ProtocolHandler [http-nio-8080]
+2017-05-03 16:46:35 [main] INFO  NioSelectorPool:179 - Using a shared selector for servlet write/read
+2017-05-03 16:46:35 [main] INFO  TomcatEmbeddedServletContainer:185 - Tomcat started on port(s): 8080 (http)
+2017-05-03 16:46:35 [main] INFO  Application:57 - Started Application in 10.112 seconds (JVM running for 12.297)
+2017-05-03 16:46:48 [http-nio-8080-exec-1] INFO  [/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-05-03 16:46:48 [http-nio-8080-exec-1] INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-05-03 16:46:48 [http-nio-8080-exec-1] INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 81 ms
+2017-05-03 16:46:48 [http-nio-8080-exec-1] INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-05-03 18:03:14 [main] INFO  Application:48 - Starting Application on PC-20160708UCGF with PID 10784 (D:\Java8\git\tourism\tourism\target\classes started by Administrator in D:\Java8\git\tourism\tourism)
+2017-05-03 18:03:14 [main] INFO  Application:665 - The following profiles are active: dev
+2017-05-03 18:03:14 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a530d0a: startup date [Wed May 03 18:03:14 CST 2017]; root of context hierarchy
+2017-05-03 18:03:16 [background-preinit] INFO  Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-05-03 18:03:20 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-03 18:03:20 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-03 18:03:20 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.StrategyDao.
+2017-05-03 18:03:20 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.ScenicDao.
+2017-05-03 18:03:20 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.UserDao.
+2017-05-03 18:03:21 [main] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e403c9f0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-03 18:03:23 [main] INFO  TomcatEmbeddedServletContainer:87 - Tomcat initialized with port(s): 8080 (http)
+2017-05-03 18:03:23 [main] INFO  StandardService:179 - Starting service Tomcat
+2017-05-03 18:03:23 [main] INFO  StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-05-03 18:03:24 [localhost-startStop-1] INFO  TldScanner:179 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-05-03 18:03:24 [localhost-startStop-1] INFO  [/]:179 - Initializing Spring embedded WebApplicationContext
+2017-05-03 18:03:24 [localhost-startStop-1] INFO  ContextLoader:276 - Root WebApplicationContext: initialization completed in 9517 ms
+2017-05-03 18:03:24 [localhost-startStop-1] INFO  ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-03 18:03:24 [localhost-startStop-1] INFO  FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-03 18:03:27 [main] INFO  LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-05-03 18:03:27 [main] INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-05-03 18:03:27 [main] INFO  Version:37 - HHH000412: Hibernate Core {5.0.11.Final}
+2017-05-03 18:03:27 [main] INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-05-03 18:03:27 [main] INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-05-03 18:03:27 [main] INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-03 18:03:27 [main] INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-05-03 18:03:29 [main] INFO  SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-05-03 18:03:32 [main] INFO  LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-05-03 18:03:34 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/scenic/inter]}" onto public java.lang.String com.hsxy.tourism.web.controller.ScenicController.interScenic(java.lang.String,org.springframework.ui.Model)
+2017-05-03 18:03:34 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/scenic/ajax/select]}" onto public com.hsxy.tourism.bean.Scenery com.hsxy.tourism.web.controller.ScenicController.selectScenic(java.lang.String)
+2017-05-03 18:03:34 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/a]}" onto public void com.hsxy.tourism.web.JedisController.Test()
+2017-05-03 18:03:34 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/json]}" onto public com.alibaba.fastjson.JSONObject com.hsxy.tourism.web.WelcomeController.welcome1()
+2017-05-03 18:03:34 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome2()
+2017-05-03 18:03:34 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter2]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome3()
+2017-05-03 18:03:34 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/back/main]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome4()
+2017-05-03 18:03:34 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-03 18:03:34 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-03 18:03:34 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2017-05-03 18:03:34 [main] INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a530d0a: startup date [Wed May 03 18:03:14 CST 2017]; root of context hierarchy
+2017-05-03 18:03:36 [main] INFO  AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-05-03 18:03:36 [main] INFO  Http11NioProtocol:179 - Initializing ProtocolHandler ["http-nio-8080"]
+2017-05-03 18:03:36 [main] INFO  Http11NioProtocol:179 - Starting ProtocolHandler [http-nio-8080]
+2017-05-03 18:03:36 [main] INFO  NioSelectorPool:179 - Using a shared selector for servlet write/read
+2017-05-03 18:03:36 [main] INFO  TomcatEmbeddedServletContainer:185 - Tomcat started on port(s): 8080 (http)
+2017-05-03 18:03:36 [main] INFO  Application:57 - Started Application in 24.849 seconds (JVM running for 34.329)
+2017-05-03 18:06:49 [main] INFO  Application:48 - Starting Application on PC-20160708UCGF with PID 11204 (D:\Java8\git\tourism\tourism\target\classes started by Administrator in D:\Java8\git\tourism\tourism)
+2017-05-03 18:06:49 [main] INFO  Application:665 - The following profiles are active: dev
+2017-05-03 18:06:50 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a530d0a: startup date [Wed May 03 18:06:50 CST 2017]; root of context hierarchy
+2017-05-03 18:06:50 [background-preinit] INFO  Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2017-05-03 18:06:52 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-03 18:06:52 [main] INFO  RepositoryConfigurationDelegate:170 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-05-03 18:06:52 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.StrategyDao.
+2017-05-03 18:06:52 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.ScenicDao.
+2017-05-03 18:06:52 [main] INFO  RepositoryConfigurationExtensionSupport:283 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hsxy.tourism.dao.UserDao.
+2017-05-03 18:06:53 [main] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e403c9f0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-03 18:06:55 [main] INFO  TomcatEmbeddedServletContainer:87 - Tomcat initialized with port(s): 8080 (http)
+2017-05-03 18:06:55 [main] INFO  StandardService:179 - Starting service Tomcat
+2017-05-03 18:06:55 [main] INFO  StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-05-03 18:06:55 [localhost-startStop-1] INFO  TldScanner:179 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-05-03 18:06:55 [localhost-startStop-1] INFO  [/]:179 - Initializing Spring embedded WebApplicationContext
+2017-05-03 18:06:55 [localhost-startStop-1] INFO  ContextLoader:276 - Root WebApplicationContext: initialization completed in 5549 ms
+2017-05-03 18:06:55 [localhost-startStop-1] INFO  ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-03 18:06:55 [localhost-startStop-1] INFO  FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-03 18:06:56 [main] INFO  LocalContainerEntityManagerFactoryBean:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-05-03 18:06:56 [main] INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-05-03 18:06:57 [main] INFO  Version:37 - HHH000412: Hibernate Core {5.0.11.Final}
+2017-05-03 18:06:57 [main] INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-05-03 18:06:57 [main] INFO  Environment:317 - HHH000021: Bytecode provider name : javassist
+2017-05-03 18:06:57 [main] INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-03 18:06:57 [main] INFO  Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-05-03 18:06:58 [main] INFO  SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+2017-05-03 18:07:00 [main] INFO  LocalContainerEntityManagerFactoryBean:382 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-05-03 18:07:01 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/scenic/inter]}" onto public java.lang.String com.hsxy.tourism.web.controller.ScenicController.interScenic(java.lang.String,org.springframework.ui.Model)
+2017-05-03 18:07:01 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/scenic/ajax/select]}" onto public com.hsxy.tourism.bean.Scenery com.hsxy.tourism.web.controller.ScenicController.selectScenic(java.lang.String)
+2017-05-03 18:07:01 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/a]}" onto public void com.hsxy.tourism.web.JedisController.Test()
+2017-05-03 18:07:01 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/json]}" onto public com.alibaba.fastjson.JSONObject com.hsxy.tourism.web.WelcomeController.welcome1()
+2017-05-03 18:07:01 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome2()
+2017-05-03 18:07:01 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/inter2]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome3()
+2017-05-03 18:07:01 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/back/main]}" onto public java.lang.String com.hsxy.tourism.web.WelcomeController.welcome4()
+2017-05-03 18:07:01 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-03 18:07:01 [main] INFO  RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-03 18:07:01 [main] INFO  SimpleUrlHandlerMapping:354 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2017-05-03 18:07:02 [main] INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a530d0a: startup date [Wed May 03 18:06:50 CST 2017]; root of context hierarchy
+2017-05-03 18:07:03 [main] INFO  AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2017-05-03 18:07:03 [main] INFO  Http11NioProtocol:179 - Initializing ProtocolHandler ["http-nio-8080"]
+2017-05-03 18:07:03 [main] INFO  Http11NioProtocol:179 - Starting ProtocolHandler [http-nio-8080]
+2017-05-03 18:07:03 [main] INFO  NioSelectorPool:179 - Using a shared selector for servlet write/read
+2017-05-03 18:07:03 [main] INFO  TomcatEmbeddedServletContainer:185 - Tomcat started on port(s): 8080 (http)
+2017-05-03 18:07:03 [main] INFO  Application:57 - Started Application in 15.053 seconds (JVM running for 17.87)
+2017-05-03 18:18:33 [http-nio-8080-exec-2] INFO  [/]:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-05-03 18:18:33 [http-nio-8080-exec-2] INFO  DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2017-05-03 18:18:33 [http-nio-8080-exec-2] INFO  DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 129 ms

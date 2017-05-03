@@ -36,20 +36,24 @@ public class Strategy {
 	@Column(name = "time", length = 50)
 	private Date time; // 发布时间
 
-	@Column(name = "userName")
-	private String userName;// 用户名
+	@Column(name = "pict")
+	private String pict;// 攻略图片
+
+	@Column(name = "name")
+	private String name;// 名字
 
 	public Strategy() {
 		super();
 	}
 
-	public Strategy(Integer strategyId, String title, String desribe, Date time, String userName) {
+	public Strategy(Integer strategyId, String title, String desribe, Date time, String pict, String name) {
 		super();
 		this.strategyId = strategyId;
 		this.title = title;
 		this.desribe = desribe;
 		this.time = time;
-		this.userName = userName;
+		this.pict = pict;
+		this.name = name;
 	}
 
 	public Integer getStrategyId() {
@@ -84,18 +88,26 @@ public class Strategy {
 		this.time = time;
 	}
 
-	public String getUserName() {
-		return userName;
+	public String getPict() {
+		return pict;
 	}
 
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setPict(String pict) {
+		this.pict = pict;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	@Override
 	public String toString() {
 		return "Strategy [strategyId=" + strategyId + ", title=" + title + ", desribe=" + desribe + ", time=" + time
-				+ ", userName=" + userName + "]";
+				+ ", pict=" + pict + ", name=" + name + "]";
 	}
 
 }

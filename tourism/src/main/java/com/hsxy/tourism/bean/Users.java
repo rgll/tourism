@@ -32,7 +32,7 @@ public class Users {
 	private String password;// 用户密码
 
 	@Column(name = "name")
-	private String name;// 姓名
+	private String name;// 名字
 
 	@Column(name = "sex", length = 1)
 	private int sex; // 性别（1男2女）
