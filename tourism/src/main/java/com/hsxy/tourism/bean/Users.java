@@ -41,7 +41,7 @@ public class Users {
 	private String address;// 地址
 
 	@Column(name = "phone")
-	private int phone;// 联系电话
+	private String phone;// 联系电话
 
 	@Column(name = "state", length = 1)
 	private int state; // 状态（1可用2不可用）
@@ -50,7 +50,7 @@ public class Users {
 		super();
 	}
 
-	public Users(Integer userId, String userName, String password, String name, int sex, String address, int phone,
+	public Users(Integer userId, String userName, String password, String name, int sex, String address, String phone,
 			int state) {
 		super();
 		this.userId = userId;
@@ -111,11 +111,11 @@ public class Users {
 		this.address = address;
 	}
 
-	public int getPhone() {
+	public String getPhone() {
 		return phone;
 	}
 
-	public void setPhone(int phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 

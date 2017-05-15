@@ -50,10 +50,16 @@ a:hover {
     background-color:#f7f9fb;
     margin:0 auto;
 }
+#box2{
+    width: 80%;
+    height: 480px;
+    background-color:#f7f9fb;
+    margin:0 auto;
+}
 header{
    padding-top: 30px;
    height: 90px;
-  background-color: white;
+   background-color: white;
 
 }
 header p:first-of-type{
@@ -129,6 +135,17 @@ header p:first-of-type{
     background-color: #ff8b06;
     font-size: 13px;
     margin-top: 10px;
+    border-radius: 5px;
+}
+.bot10 p{
+    height: 40px;
+    line-height: 30px;
+    text-align: center;
+    width: 100px;
+    margin-left: 80%;
+    background-color: #ff8b06;
+    font-size: 18px;
+    margin-top: 20px;
     border-radius: 5px;
 }
 .bot1 p:nth-of-type(4):hover{

@@ -13,7 +13,7 @@ public class WelcomeController {
 
 	@RequestMapping("/register")
 	public String welcome3() {
-		return "front/login";
+		return "front/register";
 	}
 
 	@RequestMapping("/login")

@@ -1,6 +1,13 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%String ctxPath = request.getContextPath(); %>
+<%
+	String name = request.getParameter("userName");
+	String pwd = request.getParameter("password");
+	Object user=request.getSession().getAttribute("user"); //获取你的对象里面涵盖的内容
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -58,8 +65,28 @@
 			        	<img alt="" src="${ctxPath}/images/002.jpg" style="height: 35px;width: 140px;">
 			    	</div>  
 			        <ul class="nav navbar-nav navbar-right"> 
-			            <li><a href="${ctxPath}/register" style="color: black; font-size: 2ex;">注册</a></li> 
-			            <li><a href="${ctxPath}/login" style="color: black; font-size: 2ex;"> 登录</a></li> 
+			        	<%-- <%
+			        		if(${sessionScope.user.name} == null){
+			        	%>
+			        			 <li><a href="${ctxPath}/register" style="color: black; font-size: 2ex;">注册</a></li> 
+			          			 <li><a href="${ctxPath}/login" style="color: black; font-size: 2ex;"> 登录</a></li>
+			        	<% }else{%>
+			        	
+			        		<li><a href="${ctxPath}/register" style="color: black; font-size: 2ex;">${sessionScope.user.name}</a></li>
+			        	<%}%> --%>
+			       	<c:choose>
+						<c:when test="${sessionScope.user == null}">
+							<li><a href="${ctxPath}/register" style="color: black; font-size: 2ex;">注册</a></li> 
+			         		<li><a href="${ctxPath}/login" style="color: black; font-size: 2ex;"> 登录</a></li>
+						</c:when>
+						<c:otherwise>
+							<li><a href="${ctxPath}/register" style="color: black; font-size: 2ex;">${sessionScope.user.name}</a></li>
+						</c:otherwise>
+					</c:choose>
+			        	
+			          <%--   <li><a href="${ctxPath}/register" style="color: black; font-size: 2ex;">注册</a></li> 
+			            <li><a href="${ctxPath}/login" style="color: black; font-size: 2ex;"> 登录</a></li>
+			            ${sessionScope.user.name}<!-- if --> --%>
 			        </ul> 
 				</div> 
 			</nav>
@@ -131,13 +158,13 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					  <ul class="nav navbar-nav cl-effect-11">
-						<li class="active"><a href="#" data-hover="主" class="scroll">主页 </a></li>
-						<li><a href="#services" data-hover="目" class="scroll">目的地</a></li>
+						<li class="active"><a href="#" onclick="javascript:window.location.href='${ctxPath}/index'" data-hover="主" class="scroll">主页 </a></li>
+						<li><a href="#services"  data-hover="目" class="scroll">目的地</a></li>
 						<li><a href="#tours" data-hover="景" class="scroll">景点</a></li>
 						<li><a href="#guides" data-hover="游" class="scroll">游记</a></li>
 						<li><a href="#foods" data-hover="美" class="scroll">美食</a></li>
-						<li><a data-hover="Contact" href="#contact" class="scroll">Contact</a></li>
-					  </ul>
+<!-- 						<li hidden="true"><a data-hover="个" hidden="true"  onclick="info()" class="scroll">个人信息</a></li>
+ -->					  </ul>
 					</div><!-- /.navbar-collapse -->
 				</div><!-- /.container-fluid -->
 			</nav>
@@ -145,4 +172,6 @@
 		</div>	
 	</div> 
 </body>
+<script type="text/javascript">
+</script>
 </html>

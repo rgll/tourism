@@ -9,6 +9,7 @@
 <title>景点</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<link rel="stylesheet" href="${ctxPath}/css/a.css">
+	<script src="${ctxPath}/js/jquery.min.js"></script>
 </head>
 <body>
 <jsp:include  page="zhuye.jsp"/> <!--引入导航栏  -->
@@ -33,13 +34,13 @@
 				<p>赵州桥成人票</p>
 				<p>请在当日15点前到互联网窗口取票</p>
 				<p>&yen${data.tacketMoney/1}</p>
-				<p>预订</p>
+				<p onclick="order(this)">预订</p>
 		</div>
 		<div class="bot1">
 				<p>赵州桥儿童票</p>
 				<p>请在当日15点前到互联网窗口取票</p>
 				<p>&yen${data.tacketMoney/2}</p>
-				<p>预订</p>
+				<p onclick="order(this)">预订</p>
 		</div>
 		<div class="bot1">
 				<p>赵州桥学生票</p>
@@ -52,16 +53,6 @@
 				<p>&yen${data.tacketMoney/2}</p>
 				<p onclick="order(this)">预订</p>
 		</div>
-		<!-- <div class="fot">点评</div>
-		<div class="fot1">
-			<p>小明：</p>
-			<p>我是先去的柏霖禅寺，然后想坐2路公交直接再去赵州桥，好不容易在车站等到车，可是车连理我都不理直接就开走了，害得我地踮的走到赵州桥。赵州桥怎么说呢，总之就是【大老远跑到赵县去公园里看座桥】。赵州桥门票要40元，感觉太贵了，10元的话还差不多（个人感觉真心有点蛋疼）。看了半天赵州桥的地，最后也没看出个子丑寅卯！里面还有非拉着你让你照张相，把照片印在水杯上的商人，烦死了，不过我还是做了一个！要25元，砍砍价，15元搞定！赵州桥公园里还有个貌似是叫【铁索桥】的桥（具体名字我忘了），走在桥上，桥来回晃荡，过桥还真得有些胆量才行！</p>
-		</div>
-		<div class="fot1">
-			<p>小李：</p>
-			<p>臭脚来评：出了赵州桥，门口很少有出租车经过，拦不到车了，于是找了一个面包车的师傅，谈好价钱，一个人3元，把我们拉到从赵县到石家庄南焦客运站的中巴始发站，本来说把我们拉到上午下车的地方就可以了，师傅说了，在那边上车就没有位置坐了，最后我们还是同意去始发站坐车返程。（详见另一个详细版）
-			</p>
-		</div> -->
 		<br />
 		<br />
 		<br />
@@ -109,6 +100,13 @@
 	
 </body>
 <script type="text/javascript">
+/*点击预定  */
+function order(or){
+	//var name = or.text;
+	window.location.href = "${ctxPath}/order/inter";
+}
+
+
     function getElementByAttr(tag, attr, value) {
          var aElements = document.getElementsByTagName(tag);
          var aEle = [];

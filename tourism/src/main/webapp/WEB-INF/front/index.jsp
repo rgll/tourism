@@ -80,175 +80,207 @@
 							<ul class="nav navbar-nav">
 								<li><a > </a></li> 
 								<li><a > </a></li> 
-								<li><a onclick="scenic(this)" >西柏坡 </a></li> 
-								<li><a onclick="scenic(this)" >古城正定 </a></li> 
-								<li><a onclick="scenic(this)" >隆兴寺 </a></li> 
 								<li><a onclick="scenic(this)" >赵州桥 </a></li> 
+								<li><a onclick="scenic(this)" >苍岩山 </a></li> 
+								<li><a onclick="scenic(this)" >西柏坡纪念馆 </a></li> 
+								<li><a onclick="scenic(this)" >石家庄水上公园 </a></li> 
 								<li><a onclick="scenic(this)" >荣国府 </a></li> 
-								<li><a onclick="scenic(this)" >隆兴寺 </a></li> 
-								<li><a onclick="scenic(this)" >驼梁 </a></li> 
+								<li><a onclick="scenic(this)" >天桂山 </a></li> 
+								<li><a onclick="scenic(this)" >嶂石岩 </a></li> 
+								<li><a onclick="scenic(this)" >驼梁山 </a></li> 
 								<li><a onclick="scenic(this)" >柏林禅寺 </a></li> 
 								<li><a onclick="scenic(this)" >抱犊寨 </a></li> 
-								<li><a href="">抱犊寨 </a></li> 
-								<li><a href="">抱犊寨 </a></li> 
-								<li><a href="">抱犊寨 </a></li> 
-								<li><a href="">抱犊寨 </a></li> 
-								<li><a href="">抱犊寨 </a></li> 
-								<li><a href="">抱犊寨 </a></li> 
-								<li><a href="">抱犊寨 </a></li> 
-								<li><a href="">抱犊寨 </a></li> 
-								<li><a href="">抱犊寨 </a></li> 
-								<li><a href="">抱犊寨 </a></li> 
-								<li><a href="">抱犊寨 </a></li> 
-								<li><a href="">抱犊寨 </a></li> 
-								<li><a href="">抱犊寨 </a></li> 
-								<li><a href="">抱犊寨 </a></li> 
+								<li><a onclick="scenic(this)" >五岳寨 </a></li> 
+								<li><a onclick="scenic(this)" >石家庄植物园 </a></li> 
+								<li><a onclick="scenic(this)" >隆兴寺 </a></li> 
+								<li><a onclick="scenic(this)" >封龙山 </a></li> 
+								<li><a onclick="scenic(this)" >石家庄动物园 </a></li> 
+								<li><a onclick="scenic(this)" >天山海世界 </a></li> 
+								<li><a onclick="scenic(this)" >西山 </a></li> 
+								<li><a onclick="scenic(this)" >石头村 </a></li> 
 							</ul>
 						</div>
 						<div class="tab-pane fade" id="home1">
 							<ul class="nav navbar-nav">
 								<li><a > </a></li> 
 								<li><a > </a></li> 
-								<li><a href="" >野三坡 </a></li> 
-								<li><a href="" >白洋淀 </a></li> 
-								<li><a href="" >白石山</a></li> 
-								<li><a href="" >狼牙山 </a></li> 
-								<li><a href="" >清西陵 </a></li> 
-								<li><a href="">满城汉墓 </a></li> 
-								<li><a href="">百里峡 </a></li> 
-								<li><a href="">直隶总督署 </a></li> 
+								<li><a onclick="scenic(this)" >满城汉墓 </a></li> 
+								<li><a onclick="scenic(this)" >白洋淀 </a></li> 
+								<li><a onclick="scenic(this)" >野三坡 </a></li> 
+								<li><a onclick="scenic(this)" >白石山 </a></li> 
+								<li><a onclick="scenic(this)" >狼牙山 </a></li> 
+								<li><a onclick="scenic(this)" >清西陵 </a></li> 
+								<li><a onclick="scenic(this)" >空中草原 </a></li> 
+								<li><a onclick="scenic(this)" >百里峡 </a></li> 
+								<li><a onclick="scenic(this)" >冉庄地道战遗址 </a></li> 
+								<li><a onclick="scenic(this)" >直隶总督署 </a></li> 
+								<li><a onclick="scenic(this)" >古莲花池 </a></li> 
+								<li><a onclick="scenic(this)" >满城汉墓 </a></li> 
+								<li><a onclick="scenic(this)" >易水湖 </a></li> 
+								<li><a onclick="scenic(this)" >白草畔 </a></li> 
+								<li><a onclick="scenic(this)" >荷花大观园 </a></li> 
+								<li><a onclick="scenic(this)" >拒马河 </a></li> 
 							</ul>
 						</div>
 						<div class="tab-pane fade" id="home2">
 							<ul class="nav navbar-nav">
 								<li><a > </a></li> 
 								<li><a > </a></li> 
-								<li><a href="" >北戴河 </a></li> 
-								<li><a href="" >山海关 </a></li> 
-								<li><a href="" >南戴河 </a></li> 
-								<li><a href="">祖山</a></li> 
-								<li><a href="" >老龙头</a></li> 
-								<li><a href="">黄金海岸 </a></li> 
-								<li><a href="" >鸽子窝公园</a></li> 
-								<li><a href="">新澳海底世界 </a></li> 
-								<li><a href="">秦皇岛野生动物园 </a></li> 
+								<li><a onclick="scenic(this)" >北戴河 </a></li> 
+								<li><a onclick="scenic(this)" >南戴河 </a></li> 
+								<li><a onclick="scenic(this)" >鸽子窝公园 </a></li> 
+								<li><a onclick="scenic(this)" >山海关 </a></li> 
+								<li><a onclick="scenic(this)" >翡翠岛 </a></li> 
+								<li><a onclick="scenic(this)" >老龙头 </a></li> 
+								<li><a onclick="scenic(this)" >南戴河国际娱乐中心 </a></li> 
+								<li><a onclick="scenic(this)" >天下第一关 </a></li> 
+								<li><a onclick="scenic(this)" >老虎石海上公园 </a></li> 
+								<li><a onclick="scenic(this)" >新澳海底世界 </a></li> 
+								<li><a onclick="scenic(this)" >秦皇岛野生动物园 </a></li> 
+								<li><a onclick="scenic(this)" >祖山 </a></li> 
+								<li><a onclick="scenic(this)" >黄金海岸 </a></li> 
+								<li><a onclick="scenic(this)" >碧螺塔酒吧公园 </a></li> 
+								<li><a onclick="scenic(this)" >联峰山 </a></li> 
+								<li><a onclick="scenic(this)" >孟姜女庙 </a></li> 
+								<li><a onclick="scenic(this)" >怪楼奇园 </a></li> 
+								<li><a onclick="scenic(this)" >燕塞湖 </a></li> 
 							</ul>
 						</div>
 						<div class="tab-pane fade" id="home3">
 							<ul class="nav navbar-nav">
 								<li><a > </a></li> 
 								<li><a > </a></li> 
-								<li><a href="" >草原天路</a></li> 
-								<li><a href="" >天漠 </a></li> 
-								<li><a href="" >中都草原 </a></li> 
-								<li><a href="">燕山</a></li> 
-								<li><a href="" >鸡鸣驿</a></li> 
-								<li><a href="" >沽源坝上草原</a></li> 
-								<li><a href="">空中草原</a></li> 
-								<li><a href="">长城岭滑雪场</a></li> 
-								<li><a href="">小五台山自然保护区 </a></li> 
+								<li><a onclick="scenic(this)"  >张北草原 </a></li> 
+								<li><a onclick="scenic(this)"  >天漠 </a></li> 
+								<li><a onclick="scenic(this)"  >鸡鸣驿 </a></li> 
+								<li><a onclick="scenic(this)" >沽源坝上草原 </a></li> 
+								<li><a onclick="scenic(this)"  >中都草原 </a></li> 
+								<li><a onclick="scenic(this)"  >小五台 </a></li> 
+								<li><a onclick="scenic(this)" >官厅水库 </a></li> 
+								<li><a onclick="scenic(this)" >暖泉古镇 </a></li> 
+								<li><a onclick="scenic(this)" >桦皮岭 </a></li> 
+								<li><a onclick="scenic(this)" >安家沟 </a></li> 
+								<li><a onclick="scenic(this)" >空中草原 </a></li> 
+								<li><a onclick="scenic(this)" >大境门 </a></li> 
+								<li><a onclick="scenic(this)" >五花草甸 </a></li> 
+								<li><a onclick="scenic(this)" >燕山 </a></li> 
+								<li><a onclick="scenic(this)" >闪电湖 </a></li> 
 							</ul>
 						</div>
 						<div class="tab-pane fade" id="home4">
 							<ul class="nav navbar-nav">
 								<li><a > </a></li> 
 								<li><a > </a></li> 
-								<li><a href="" >避暑山庄</a></li> 
-								<li><a href="" >丰宁坝上</a></li> 
-								<li><a href="" >木兰围场</a></li> 
-								<li><a href="" >雾灵山 </a></li> 
-								<li><a href="">塞罕坝 </a></li> 
-								<li><a href="" >普陀宗乘之庙 </a></li> 
+								<li><a onclick="scenic(this)"  >避暑山庄 </a></li> 
+								<li><a onclick="scenic(this)"  >丰宁坝上 </a></li> 
+								<li><a onclick="scenic(this)"  >木兰围场 </a></li> 
+								<li><a onclick="scenic(this)"  >雾灵山 </a></li> 
+								<li><a onclick="scenic(this)" >塞罕坝 </a></li> 
+								<li><a onclick="scenic(this)"  >外八庙 </a></li> 
+								<li><a onclick="scenic(this)"  >棒槌山 </a></li> 
+								<li><a onclick="scenic(this)"  >普陀宗乘之庙 </a></li> 
+								<li><a onclick="scenic(this)"  >京北第一草原 </a></li> 
+								<li><a onclick="scenic(this)"  >普宁寺 </a></li> 
+								<li><a onclick="scenic(this)"  >红河漂流 </a></li> 
+								<li><a onclick="scenic(this)"  >机械林场 </a></li> 
+								<li><a onclick="scenic(this)"  >烟雨楼 </a></li> 
 							</ul>
 						</div>
 						<div class="tab-pane fade" id="home5">
 							<ul class="nav navbar-nav">
 								<li><a > </a></li> 
 								<li><a > </a></li> 
-								<li><a href="" >滦州古城</a></li> 
-								<li><a href="" >清东陵</a></li> 
-								<li><a href="" >月坨岛</a></li> 
-								<li><a href="" >菩提岛</a></li> 
-								<li><a href="">金沙岛 </a></li> 
-								<li><a href="">青山关  </a></li> 
-								<li><a href="">南湖公园 </a></li> 
-								<li><a href="" >唐山抗震纪念馆</a></li> 
-								<li><a href="">开滦国家矿山公园 </a></li> 
+								<li><a onclick="scenic(this)"  >滦州古城 </a></li> 
+								<li><a onclick="scenic(this)"  >清东陵 </a></li> 
+								<li><a onclick="scenic(this)"  >月坨岛 </a></li> 
+								<li><a onclick="scenic(this)"  >唐山抗震纪念馆 </a></li> 
+								<li><a onclick="scenic(this)" >菩提岛 </a></li> 
+								<li><a onclick="scenic(this)" >景忠山  </a></li> 
+								<li><a onclick="scenic(this)" >金沙岛 </a></li> 
+								<li><a onclick="scenic(this)"  >青山关 </a></li> 
+								<li><a onclick="scenic(this)" >潘家口 </a></li> 
+								<li><a onclick="scenic(this)" >南湖公园 </a></li> 
+								<li><a onclick="scenic(this)" >曹妃甸湿地景区 </a></li> 
 							</ul>
 						</div>
 						<div class="tab-pane fade" id="home6">
 							<ul class="nav navbar-nav">
 								<li><a > </a></li> 
 								<li><a > </a></li> 
-								<li><a href="" >京娘湖</a></li> 
-								<li><a href="" >娲皇宫</a></li> 
-								<li><a href="" >朝阳沟</a></li> 
-								<li><a href="" >古武当山 </a></li> 
-								<li><a href="" >元宝山 </a></li> 
-								<li><a href="">长寿村 </a></li> 
-								<li><a href="">赵王陵</a></li> 
-								<li><a href="">广府古城</a></li> 
-								<li><a href="">太行五指山 </a></li> 
-								<li><a href="">响堂山石窟 </a></li> 
+								<li><a onclick="scenic(this)"  >京娘湖 </a></li> 
+								<li><a onclick="scenic(this)"  >娲皇宫 </a></li> 
+								<li><a onclick="scenic(this)"  >朝阳沟 </a></li> 
+								<li><a onclick="scenic(this)"  >古武当山 </a></li> 
+								<li><a onclick="scenic(this)"  >邯郸市博物馆 </a></li> 
+								<li><a onclick="scenic(this)"  >元宝山 </a></li> 
+								<li><a onclick="scenic(this)" >长寿村 </a></li> 
+								<li><a onclick="scenic(this)" >学步桥 </a></li> 
+								<li><a onclick="scenic(this)" >七步沟 </a></li> 
+								<li><a onclick="scenic(this)" >武灵丛台 </a></li> 
+								<li><a onclick="scenic(this)" >兰陵王墓 </a></li> 
 							</ul>
 						</div>
 						<div class="tab-pane fade" id="home7">
 							<ul class="nav navbar-nav">
 								<li><a > </a></li> 
 								<li><a > </a></li> 
-								<li><a href="" >衡水湖</a></li> 
-								<li><a href="" >宝云寺</a></li> 
-								<li><a href="" >竹林寺 </a></li> 
-								<li><a href="">庆林寺塔 </a></li> 
-								<li><a href="">琴瑟园客栈</a></li> 
-								<li><a href="" >冀宝斋博物馆</a></li> 
-								<li><a href="" >武强年画博物馆</a></li> 
+								<li><a onclick="scenic(this)"  >衡水湖 </a></li> 
+								<li><a onclick="scenic(this)"  >竹林寺 </a></li> 
+								<li><a onclick="scenic(this)"  >冀宝斋博物馆 </a></li> 
+								<li><a onclick="scenic(this)" >宝云寺 </a></li> 
+								<li><a onclick="scenic(this)" >泰华雅阁温泉 </a></li> 
+								<li><a onclick="scenic(this)"  >武强年画博物馆 </a></li> 
+								<li><a onclick="scenic(this)"  >庆林寺塔 </a></li> 
 							</ul>
 						</div>
 						<div class="tab-pane fade" id="home8">
 							<ul class="nav navbar-nav">
 								<li><a > </a></li> 
 								<li><a > </a></li> 
-								<li><a href="" >天下第一城</a></li> 
-								<li><a href="" >廊坊市文化艺术中心</a></li> 
-								<li><a href="" >胜芳古镇</a></li> 
-								<li><a href="" >茗汤温泉度假村 </a></li> 
-								<li><a href="" >廊坊自然公园</a></li> 
-								<li><a href="">九天休闲谷 </a></li> 
+								<li><a onclick="scenic(this)"  >天下第一城 </a></li> 
+								<li><a onclick="scenic(this)"  >廊坊市文化艺术中心 </a></li> 
+								<li><a onclick="scenic(this)"  >胜芳古镇 </a></li> 
+								<li><a onclick="scenic(this)"  >茗汤温泉度假村 </a></li> 
+								<li><a onclick="scenic(this)"  >廊坊自然公园</a></li> 
+								<li><a onclick="scenic(this)" >廊坊国际会展中心 </a></li> 
+								<li><a onclick="scenic(this)" >廊坊草原 </a></li> 
+								<li><a onclick="scenic(this)" >廊坊儿童乐园 </a></li> 
+								<li><a onclick="scenic(this)" >燕郊公园 </a></li> 
 							</ul>
 						</div>
 						<div class="tab-pane fade" id="home9">
 							<ul class="nav navbar-nav">
 								<li><a > </a></li> 
 								<li><a > </a></li> 
-								<li><a href="" >东光铁佛寺</a></li> 
-								<li><a href="">南皮</a></li> 
-								<li><a href="" >南大港湿地</a></li> 
-								<li><a href="" >吴桥杂技大世界</a></li> 
-								<li><a href="" >沧州文庙 </a></li> 
-								<li><a href="" >沧州铁狮子</a></li> 
-								<li><a href="">纪晓岚文化园</a></li> 
-								<li><a href="">海兴小山</a></li> 
-								<li><a href="">名人植物园</a></li> 
-								<li><a href="">清真北大寺</a></li> 
+								<li><a onclick="scenic(this)"  >吴桥杂技大世界 </a></li> 
+								<li><a onclick="scenic(this)" >东光铁佛寺 </a></li> 
+								<li><a onclick="scenic(this)"  >南大港湿地 </a></li> 
+								<li><a onclick="scenic(this)"  >沧州文庙 </a></li> 
+								<li><a onclick="scenic(this)"  >沧州铁狮子 </a></li> 
+								<li><a onclick="scenic(this)"  >南皮 </a></li> 
+								<li><a onclick="scenic(this)" >纪晓岚文化园 </a></li> 
+								<li><a onclick="scenic(this)" >海兴小山 </a></li> 
+								<li><a onclick="scenic(this)" >名人植物园 </a></li> 
+								<li><a onclick="scenic(this)" >清真北大寺 </a></li> 
+								<li><a onclick="scenic(this)" >沧州旧城 </a></li> 
+								<li><a onclick="scenic(this)" >铁狮子 </a></li> 
 							</ul>
 						</div>
 						<div class="tab-pane fade" id="home10">
 							<ul class="nav navbar-nav">
 								<li><a > </a></li> 
 								<li><a > </a></li> 
-								<li><a href="" >天河山</a></li> 
-								<li><a href="" >天河山</a></li> 
-								<li><a href="" >崆山白云洞</a></li> 
-								<li><a href="" >九龙峡</a></li> 
-								<li><a href="" >峡谷群</a></li> 
-								<li><a href="" >云梦山</a></li> 
-								<li><a href="">前南峪</a></li> 
-								<li><a href="">岐山湖</a></li> 
-								<li><a href="">天梯山</a></li> 
-								<li><a href="">张果老山</a></li> 
-								<li><a href="">邢台玉泉寺</a></li> 
-								<li><a href="">河北北武当山</a></li> 
+								<li><a onclick="scenic(this)"  >天河山 </a></li> 
+								<li><a onclick="scenic(this)"  >崆山白云洞 </a></li> 
+								<li><a onclick="scenic(this)"  >九龙峡 </a></li> 
+								<li><a onclick="scenic(this)"  >峡谷群 </a></li> 
+								<li><a onclick="scenic(this)"  >云梦山 </a></li> 
+								<li><a onclick="scenic(this)"  >邢台玉泉寺 </a></li> 
+								<li><a onclick="scenic(this)" >前南峪 </a></li> 
+								<li><a onclick="scenic(this)" >岐山湖 </a></li> 
+								<li><a onclick="scenic(this)" >天梯山 </a></li> 
+								<li><a onclick="scenic(this)" >张果老山 </a></li> 
+								<li><a onclick="scenic(this)" >达活泉公园 </a></li> 
 							</ul>
 						</div>
 					</div>
@@ -373,7 +405,7 @@
 						<div class="team_back"></div>
 						<img class="img-responsive" src="${ctxPath}/images/t1.jpg"  alt=" ">
 						<div class="team_info">
-							<a href="#"  class="face_one"><i class="fc2"></i></a>
+							<a href="https://lvyou.baidu.com/user/f1c4da5fe28cae096715010a" target="_blank"  class="face_one"><i class="fc2"></i></a>
 						</div>
 					</div>
 					<h4>玖儿的足迹</h4>
@@ -385,7 +417,7 @@
 						<div class="team_back"></div>
 						<img class="img-responsive" src="${ctxPath}/images/t3.jpg"  alt=" ">
 						<div class="team_info">
-							<a href="#"  class="face_one"><i class="fc2"></i></a>
+							<a href="https://lvyou.baidu.com/user/e70585374492fb2efc518b18" target="_blank" class="face_one"><i class="fc2"></i></a>
 						</div>
 					</div>
 					<h4>挥手过去Seek</h4>
@@ -396,7 +428,7 @@
 						<div class="team_back"></div>
 						<img class="img-responsive" src="${ctxPath}/images/t4.jpg"  alt=" ">
 						<div class="team_info">
-							<a href="#"  class="face_one"><i class="fc2"></i></a>
+							<a href="https://lvyou.baidu.com/user/cb87f11f4d5f6a39ee0defbd" target="_blank"  class="face_one"><i class="fc2"></i></a>
 						</div>
 					</div>
 					<h4>M猫猫虎</h4>
@@ -407,7 +439,7 @@
 						<div class="team_back"></div>
 						<img class="img-responsive" src="${ctxPath}/images/t2.jpg"  alt=" ">
 						<div class="team_info">
-							<a href="#"  class="face_one"><i class="fc2"></i></a>
+							<a href="https://lvyou.baidu.com/user/998c4586ded8386906fa126a" target="_blank" class="face_one"><i class="fc2"></i></a>
 						</div>
 					</div>
 					<h4>真主雄鹰</h4>
@@ -426,74 +458,74 @@
 					<section>
 						<ul id="da-thumbs" class="da-thumbs">
 							<li>
-								<a href="${ctxPath}/images/0b1.jpg" class="b-link-stripe b-animate-go thickbox">
-									<img src="${ctxPath}/images/0b1.jpg" alt="" />
+								<a href="${ctxPath}/images/八大碗.jpg" class="b-link-stripe b-animate-go thickbox">
+									<img src="${ctxPath}/images/八大碗.jpg" alt="" />
 									<div>
-										<h5>石家庄</h5>
+										<h5>八大碗</h5>
 									</div>
 								</a>
 							</li>
 							<li>
-								<a href="${ctxPath}/images/0b2.jpg" class="b-link-stripe b-animate-go thickbox">
-									<img src="${ctxPath}/images/0b2.jpg" alt="" />
+								<a href="${ctxPath}/images/白云章包子.jpg" class="b-link-stripe b-animate-go thickbox">
+									<img src="${ctxPath}/images/白云章包子.jpg" alt="" />
 									<div>
-										<h5>秦皇岛</h5>
+										<h5>白云章包子</h5>
 									</div>
 								</a>
 							</li>
 							<li>
-								<a href="${ctxPath}/images/0b3.jpg" class="b-link-stripe b-animate-go thickbox">
-									<img src="${ctxPath}/images/0b3.jpg" alt="" />
+								<a href="${ctxPath}/images/沧州狮子头.jpg" class="b-link-stripe b-animate-go thickbox">
+									<img src="${ctxPath}/images/沧州狮子头.jpg" alt="" />
 									<div>
-										<h5>保&nbsp;&nbsp;定</h5>
+										<h5>沧州狮子头</h5>
 									</div>
 								</a>
 							</li>
 							<li>
-								<a href="${ctxPath}/images/0b4.jpg" class="b-link-stripe b-animate-go thickbox">
-									<img src="${ctxPath}/images/0b4.jpg" alt="" />
+								<a href="${ctxPath}/images/火锅鸡.jpg" class="b-link-stripe b-animate-go thickbox">
+									<img src="${ctxPath}/images/火锅鸡.jpg" alt="" />
 									<div>
-										<h5>承&nbsp;&nbsp;德</h5>
+										<h5>火锅鸡</h5>
 									</div>
 								</a>
 							</li>
 							<li>	
-								<a href="${ctxPath}/images/0b5.jpg" class="b-link-stripe b-animate-go thickbox">
-									<img src="${ctxPath}/images/0b5.jpg" alt="" />
+								<a href="${ctxPath}/images/煎碗坨.jpg" class="b-link-stripe b-animate-go thickbox">
+									<img src="${ctxPath}/images/煎碗坨.jpg" alt="" />
 									<div>
-										<h5>张家口</h5>
+										<h5>煎碗坨</h5>
 									</div>
 								</a>
 							</li>
 							<li>
-								<a href="${ctxPath}/images/0b6.jpg" class="b-link-stripe b-animate-go thickbox">
-									<img src="${ctxPath}/images/0b6.jpg" alt="" />
+								<a href="${ctxPath}/images/驴肉火烧.jpg" class="b-link-stripe b-animate-go thickbox">
+									<img src="${ctxPath}/images/驴肉火烧.jpg" alt="" />
 									<div>
-										<h5>邯&nbsp;&nbsp;郸</h5>
+										<h5>驴肉火烧</h5>
 									</div>
 								</a>
 							</li>
 							<li>
-								<a href="${ctxPath}/images/0b7.jpg" class="b-link-stripe b-animate-go thickbox">
-									<img src="${ctxPath}/images/0b7.jpg" alt="" />
+								<a href="${ctxPath}/images/南沙饼.jpg" class="b-link-stripe b-animate-go thickbox">
+									<img src="${ctxPath}/images/南沙饼.jpg" alt="" />
 									<div>
-										<h5>沧&nbsp;&nbsp;州</h5>
+										<h5>南沙饼</h5>
 									</div>
 								</a>
 							</li>
 							<li>
-								<a href="${ctxPath}/images/0b8.jpg" class="b-link-stripe b-animate-go thickbox">
-									<img src="${ctxPath}/images/0b8.jpg" alt="" />
+								<a href="${ctxPath}/images/杏仁露.jpg" class="b-link-stripe b-animate-go thickbox">
+									<img src="${ctxPath}/images/杏仁露.jpg" alt="" />
 									<div>
-										<h5>衡&nbsp;&nbsp;水</h5>
+										<h5>杏仁露</h5>
 									</div>
 								</a>
 							</li>
 							<li>
-								<a href="${ctxPath}/images/0b9.jpg" class="b-link-stripe b-animate-go thickbox">
-									<img src="${ctxPath}/images/0b9.jpg" alt="" />
+								<a href="${ctxPath}/images/羊肠汤.jpg" class="b-link-stripe b-animate-go thickbox">
+									<img src="${ctxPath}/images/羊肠汤.jpg" alt="" />
 									<div>
-										<h5>唐&nbsp;&nbsp;山</h5>
+										<h5>羊肠汤</h5>
 									</div>
 								</a>
 							</li>
@@ -560,40 +592,7 @@
 			</div>
 		</div>
 		 --%>
-		<!--news-->
-		</div>
-			<div class="contact"  id="contact">
-				<div class="container">
-					<h3 class="tittle">Contact</h3>
-					<div class="contact-grids">
-						<form action="#" method="post">
-							<div class="col-md-6 grid-contact">
-								<div class="your-top">
-									<i class="glyphicon glyphicon-user"> </i>
-									<input type="text" name="Name" placeholder="Name"  required >								
-									<div class="clearfix"> </div>
-								</div>
-								<div class="your-top">
-									<i class="glyphicon glyphicon-envelope"> </i>
-									<input type="text" name="E-mail" placeholder="E-mail"  required>								
-									<div class="clearfix"> </div>
-								</div>
-								<div class="your-top">
-									<i class="glyphicon glyphicon-link"> </i>
-									<input type="text" name="Website" placeholder="Website"  required>								
-									<div class="clearfix"> </div>
-								</div>
-								
-							</div>
-							<div class="col-md-6 grid-contact-in">
-								<textarea name="Message"  placeholder=" Message"  required></textarea>
-								<input type="submit" value="Send">
-							</div>
-							<div class="clearfix"> </div>
-						</form>
-					</div>
-				</div>
-			</div>
+		
 		<!--footer-->
 		<div class="copy-section">
 			<div class="container">
